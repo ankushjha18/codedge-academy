@@ -40,7 +40,7 @@ export default function Navbar() {
           {/* Left: Logo */}
           <Link href="/" className="flex items-center gap-3 group">
             {/* Use Next/Image for responsive logo */}
-            <Image src="/logo.png" alt="codedge academy" width={100} height={100} className="rounded-sm" priority />
+            <Image src="/logo.png" alt="codedge academy" width={150} height={150} className="rounded-sm" priority />
             {/*<span className="font-semibold tracking-tight text-pretty group-hover:opacity-90 transition-opacity">
               EduPro
             </span> */}

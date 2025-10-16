@@ -46,7 +46,7 @@ export function Footer() {
               <div className="relative">
                 <img 
                   src="/logo.png" 
-                  alt="Digitrix Solutions" 
+                  alt="codedge academy" 
                   className="h-50 w-auto object-contain filter brightness-110 hover:brightness-125 transition-all duration-300"
                 />
               </div>
