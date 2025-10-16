@@ -45,7 +45,7 @@ export function Footer() {
               </div>
               <div className="relative">
                 <img 
-                  src="./logo_digitrix.png" 
+                  src="/logo.png" 
                   alt="Digitrix Solutions" 
                   className="h-50 w-auto object-contain filter brightness-110 hover:brightness-125 transition-all duration-300"
                 />
@@ -127,7 +127,7 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="text-xl font-bold text-white flex items-center gap-2">
               <TrendingUp className="h-5 w-5 text-cyan-400" />
-              Services
+              Courses
             </h4>
             <ul className="space-y-3">
               {[
@@ -158,18 +158,14 @@ export function Footer() {
           <div className="space-y-6">
             <h4 className="text-xl font-bold text-white flex items-center gap-2">
               <Users className="h-5 w-5 text-purple-400" />
-              Company
+              Services
             </h4>
             <ul className="space-y-3">
               {[
                 { name: "About Us", icon: Users, href: "/about" },
-                { name: "Portfolio", icon: Briefcase, href: "/portfolio" },
                 { name: "Careers", icon: TrendingUp, href: "/careers" },
                 { name: "Blog", icon: BookOpen, href: "/blog" },
-                { name: "Contact", icon: Phone, href: "/contact" },
-                { name: "Privacy Policy", icon: Shield, href: "/privacypolicy" },
-                { name: "Terms & Conditions", icon: FileText, href: "/termsofservices" },
-                { name: "Cookie Policy", icon: Cookie, href: "/cookie" }
+                { name: "Contact", icon: Phone, href: "/contact" }
               ].map((item, index) => (
                 <li key={item.name} className="group/item">
                   <a 
@@ -205,7 +201,7 @@ export function Footer() {
                     href="tel:+1234567890" 
                     className="text-sm text-gray-300 hover:text-pink-400 transition-colors duration-300"
                   >
-                    +91 7294969479
+                    +91 XXXXXXXXXX
                   </a>
                 </div>
               </div>
@@ -218,7 +214,7 @@ export function Footer() {
                     href="mailto:info@digitrix.com" 
                     className="text-sm text-gray-300 hover:text-pink-400 transition-colors duration-300"
                   >
-                    info@digitrixsolutions.in
+                    codeede 
                   </a>
                 </div>
               </div>
@@ -251,7 +247,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-              <div className="text-gray-400 text-sm">© 2025 Digitrix Solutions. All rights reserved.</div>
+              <div className="text-gray-400 text-sm">© 2025 codedge academy. All rights reserved.</div>
             </div>
             <div className="flex gap-8 text-sm">
               {[
