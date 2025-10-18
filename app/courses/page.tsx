@@ -1,16 +1,11 @@
-import { Hero } from "@/components/hero"
+import  HeroSection  from "@/components/hero"
 import Link from "next/link"
 import AnimatedSection from "@/components/animated-section"
 
 export default function CoursesIndex() {
   return (
     <>
-      <Hero
-        eyebrow="Catalog"
-        title="Choose your path."
-        subtitle="Three flagship tracks designed to be practical, aesthetic, and industry-aligned."
-        ctaHref="/enroll"
-        ctaLabel="Enroll"
+      <HeroSection
       />
       <AnimatedSection as="section" className="mx-auto max-w-6xl px-4 md:px-6 pb-20" delayMs={60}>
         <div className="grid gap-6 md:grid-cols-3">
