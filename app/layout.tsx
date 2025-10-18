@@ -23,12 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>
-          <a
-            href="#main"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:px-3 focus:py-2 focus:rounded-md focus:bg-[var(--color-secondary)] focus:text-[var(--color-secondary-foreground)]"
-          >
-            Skip to content
-          </a>
+        
           <Navbar />
           <main id="main">{children}</main>
           <Analytics />
