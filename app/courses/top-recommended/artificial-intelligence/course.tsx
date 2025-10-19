@@ -90,7 +90,7 @@ export default function WebDevHero() {
       <div className="relative z-10 container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen">
         {/* Left content */}
         <div className="flex-1 space-y-8 mb-12 lg:mb-0">
-          {/* Logo/Brand */}
+          {/* Logo/Brand /}
           <div className="flex items-center gap-3 group">
             <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300">
               <Code2 className="w-7 h-7 text-white" />
@@ -162,7 +162,7 @@ export default function WebDevHero() {
             </button>
           </div>
 
-          {/* Stats */}
+          {/* Stats /}
           <div className="flex gap-8 pt-4">
             {[
               { value: '5000+', label: 'Students Placed' },
@@ -176,7 +176,7 @@ export default function WebDevHero() {
                 <div className="text-gray-400 text-sm mt-1">{stat.label}</div>
               </div>
             ))}
-          </div>
+          </div>*/}
         </div>
 
         {/* Right visual element */}
