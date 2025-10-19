@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Sparkles, ArrowRight, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { BookOpen, Award, Globe, TrendingUp, GraduationCap, Users } from 'lucide-react';
+import PopupForm from './popupform';
 
 
 type NodeType = {
@@ -16,7 +17,8 @@ type NodeType = {
 export default function HeroSection() {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [nodes, setNodes] = useState<NodeType[]>([]);
-
+     const [isFormOpen, setIsFormOpen] = useState(false);
+ 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePos({ x: e.clientX, y: e.clientY });
@@ -221,15 +223,18 @@ export default function HeroSection() {
           </button>
          
           {/* Contact Us Button */}
-          <Link href="/contact">
-          <button className="group relative px-8 py-4 bg-transparent border-2 border-purple-500 rounded-full font-semibold text-white text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-pink-500">
+          <PopupForm
+            trigger={
+           <button 
+          className="group relative px-8 py-4 bg-transparent border-2 border-purple-500 rounded-full font-semibold text-white text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-pink-500">
             <span className="relative z-10 flex items-center gap-2">
               <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
               Contact Us
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
-          </Link>
+            }/>
+          
         </div>
       </div>
         

@@ -7,8 +7,8 @@ const stats = [
     icon: Users,
     value: 24000,
     suffix: "+",
-    label: "Career",
-    sublabel: "Transition",
+    label: "Career Transitions",
+    sublabel: "",
     color: "from-blue-500 to-cyan-500"
   },
   {
@@ -24,8 +24,8 @@ const stats = [
     icon: DollarSign,
     value: 350,
     suffix: "%",
-    label: "Highest Salary",
-    sublabel: "Hike",
+    label: "Highest Salary Hike",
+    sublabel: "",
     color: "from-orange-500 to-red-500"
   },
   {
@@ -41,8 +41,8 @@ const stats = [
     icon: Building2,
     value: 450,
     suffix: "+",
-    label: "Industry",
-    sublabel: "Partners",
+    label: "Industry Partners",
+    sublabel: "",
     color: "from-green-500 to-emerald-500"
   }
 ]

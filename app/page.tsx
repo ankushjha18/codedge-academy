@@ -11,6 +11,8 @@ import TestimonialsSection from "@/components/testimonials"
 import FAQ from "@/components/faq"
 import AlumniCarousel from "@/components/alumini"
 import MasterclassSection from "@/components/materclass"
+import SignatureFramework from "@/components/framework"
+import ContactSection from "@/components/contactform"
 
 export default function Page() {
   return (
@@ -26,6 +28,7 @@ export default function Page() {
       <CoursesSection />
       <WhyChooseUs />
       <LearningPathway />
+      <SignatureFramework />
       <TestimonialsSection />
       <AlumniCarousel />
       <MasterclassSection />
@@ -64,6 +67,7 @@ export default function Page() {
 
       {/* Page CTA Band */}
       <ConsultancySection />
+      <ContactSection />
       <FAQ />
     </>
   )

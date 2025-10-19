@@ -143,7 +143,7 @@ const Navbar = () => {
               <div
                 className="relative group perspective-1000"
                 onMouseEnter={() => setShowCourseDropdown(true)}
-                onMouseLeave={() => setShowCourseDropdown(false)}
+                onMouseLeave={() => setTimeout(() => setShowCourseDropdown(false), 150)}
               >
                 <button className={`relative px-5 py-2.5 rounded-2xl font-semibold transition-all duration-300 group overflow-hidden ${
                   currentPath.includes('/courses') 
