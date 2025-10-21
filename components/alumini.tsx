@@ -89,9 +89,9 @@ export default function AlumniCarousel() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 py-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold text-white text-center mb-16 animate-fade-in">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 py-10 px-8">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-3xl md:text-4xl font-bold text-white text-center mb-16 animate-fade-in">
           Explore and Connect with Our Alumni
         </h1>
 
@@ -125,7 +125,7 @@ export default function AlumniCarousel() {
                     }`}
                   >
                     {/* Header Section */}
-                    <div className="bg-gradient-to-r from-blue-600 to-blue-800 h-32 relative">
+                    <div className="bg-gradient-to-r from-blue-600 to-blue-800 h-22 relative">
                       <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2">
                         <div
                           className={`w-32 h-32 rounded-full border-4 border-white overflow-hidden transition-all duration-500 ${
@@ -144,7 +144,7 @@ export default function AlumniCarousel() {
                     </div>
 
                     {/* Content Section */}
-                    <div className="pt-20 pb-8 px-6 text-center">
+                    <div className="pt-15 pb-8 px-6 text-center">
                       <h3 className="text-2xl font-bold text-gray-800 mb-4">
                         {alumni.name}
                       </h3>

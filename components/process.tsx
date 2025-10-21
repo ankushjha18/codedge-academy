@@ -94,20 +94,20 @@ const LearningPathway = () => {
             <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-purple-600 animate-pulse" style={{ animationDelay: '0.5s' }} />
           </div>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6">
+          <h2 className=" flex justify-center items-center gap-4  text-3xl md:text-4xl lg:text-5xl font-black mb-4 md:mb-6">
             <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
               Learning
             </span>
-            <span className="block mt-2 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x">
               Pathway
             </span>
           </h2>
           
-          <p className="text-base md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
+          <p className="text-base md:text-l text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
             Smarter learning with expert guidance and real projects
           </p>
 
-          <div className="mt-6 md:mt-8 flex items-center justify-center space-x-4">
+          <div className="mt-2 md:mt-3 flex items-center justify-center space-x-4">
             <div className="h-[2px] w-16 md:w-24 bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
             <div className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></div>
             <div className="h-[2px] w-16 md:w-24 bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
@@ -325,7 +325,7 @@ const LearningPathway = () => {
             </div>
 
             {/* Success Destination - SMALLER */}
-            <div className="absolute top-[55%] right-[5%]">
+            <div className="absolute top-[35%] right-[5%]">
               <div className="relative group cursor-pointer">
                 <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-600 blur-2xl opacity-50 animate-pulse-glow"></div>
                 <div className="relative bg-gradient-to-br from-green-400 to-emerald-600 w-16 h-16 rounded-full shadow-2xl flex items-center justify-center ring-4 ring-white/50">
@@ -444,7 +444,7 @@ const LearningPathway = () => {
           </div>
         </div>
 
-        {/* Progress Bar */}
+        {/* Progress Bar /}
         <div className="mt-2 md:mt-1 max-w-3xl mx-auto ">
           <div className="bg-white/80 backdrop-blur-xl rounded-xl md:rounded-2xl shadow-xl p-4 md:p-6 border border-gray-100">
             <div className="flex justify-between items-center mb-3 md:mb-4">
@@ -481,7 +481,7 @@ const LearningPathway = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <style jsx>{`

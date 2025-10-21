@@ -107,7 +107,7 @@ export default function TestimonialsSection() {
   }
 
   return (
-    <section className="py-24 px-4 md:px-6 lg:px-8 bg-gradient-to-br from-background via-muted/10 to-background relative overflow-hidden">
+    <section className="py-10 px-10 md:px-10 lg:px-8 bg-gradient-to-br from-background via-muted/10 to-background relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl animate-float-slow" />
@@ -115,17 +115,17 @@ export default function TestimonialsSection() {
         <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-secondary/20 to-accent/20 rounded-full blur-2xl animate-pulse" />
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 animate-float-slow">
-          <Badge variant="outline" className="mb-6 text-primary border-primary/20 px-4 py-2 text-sm font-medium">
+        <div className="text-center mb-8 animate-float-slow">
+          <Badge variant="outline" className="mb-4 text-primary border-primary/20 px-4 py-2 text-sm font-medium">
             <Users className="w-4 h-4 mr-2" />
             Client Testimonials
           </Badge>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-900 via-orange-950 to-blue-900 bg-clip-text text-transparent leading-tight">
             What Our Clients Say
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm md:text-sm text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Don't just take our word for it. Here's what industry leaders say about working with us.
           </p>
         </div>
@@ -145,7 +145,7 @@ export default function TestimonialsSection() {
                       .map((testimonial, index) => (
                         <Card
                           key={index}
-                          className="group relative overflow-hidden border-2 bg-gradient-to-br from-card via-card/95 to-muted/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-700 hover:scale-105 cursor-pointer will-transform"
+                          className="group relative overflow-hidden border-2 bg-gradient-to-br from-card via-card/95 to-muted/5 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-700 hover:scale-110 cursor-pointer will-transform"
                         >
                           {/* Gradient overlay */}
                           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -155,7 +155,7 @@ export default function TestimonialsSection() {
                             <Quote className="w-12 h-12 text-primary" />
                           </div>
 
-                          <CardContent className="p-6 lg:p-8 relative z-10">
+                          <CardContent className="p-3 lg:p-8 relative z-10">
                             {/* Header with image and basic info */}
                             <div className="flex items-center mb-6">
                               <div className="relative">

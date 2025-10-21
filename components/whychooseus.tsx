@@ -123,7 +123,7 @@ export default function WhyChooseUs() {
 
   return (
     <div ref={sectionRef} className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 py-20 px-4 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div 
           className="text-center mb-20"
@@ -134,10 +134,10 @@ export default function WhyChooseUs() {
           }}
         >
           <span className="text-orange-500 font-semibold text-lg mb-2 block tracking-wider">Why Us?</span>
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
             The <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Codedge</span> Advantage
           </h2>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-slate-600 text-sm max-w-xl mx-auto leading-relaxed">
             Transform your career with our comprehensive learning ecosystem designed for success
           </p>
         </div>

@@ -74,18 +74,18 @@ const TrustedBrandsSection = () => {
             </div>
           </div>
 
-          <h2 className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
             Trusted by world's best
             <span className="block mt-2 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient-x">
               Organisations
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-l text-gray-600 max-w-2xl mx-auto">
             Recognized globally by top companies and leading employers.
           </p>
 
           {/* Decorative line */}
-          <div className="mt-8 flex items-center justify-center space-x-4">
+          <div className="mt-2 flex items-center justify-center space-x-4">
             <div className="h-1 w-20 bg-gradient-to-r from-transparent to-orange-500 rounded-full"></div>
             <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse"></div>
             <div className="h-1 w-32 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 rounded-full"></div>
@@ -95,18 +95,18 @@ const TrustedBrandsSection = () => {
         </div>
 
         {/* Scrolling Rows */}
-        <div className="space-y-8">
+        <div className="space-y-3">
           {brandRows.map((brands, rowIndex) => (
             <div
               key={rowIndex}
-              className="relative overflow-hidden py-4"
+              className="relative overflow-hidden py-2"
             >
               {/* Gradient overlays for fade effect */}
-              <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
-              <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-22 bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-22 bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none"></div>
 
               <div
-                className={`flex space-x-6 ${
+                className={`flex space-x-3 ${
                   rowIndex === 1 ? 'animate-scroll-left' : 'animate-scroll-right'
                 }`}
                 style={{
@@ -129,7 +129,7 @@ const TrustedBrandsSection = () => {
                       <div className={`absolute inset-0 bg-gradient-to-r ${brand.color} rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-all duration-500 transform group-hover:scale-110`}></div>
                       
                       {/* Card */}
-                      <div className="relative w-52 h-32 bg-white rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-500 overflow-hidden transform group-hover:scale-110 group-hover:-translate-y-2">
+                      <div className="relative w-52 h-22 bg-white rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-500 overflow-hidden transform group-hover:scale-80 group-hover:-translate-y-2">
                         {/* Gradient border animation */}
                         <div className={`absolute inset-0 bg-gradient-to-r ${brand.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
                         <div className="absolute inset-[2px] bg-white rounded-2xl"></div>

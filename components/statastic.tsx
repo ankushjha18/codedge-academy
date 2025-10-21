@@ -5,8 +5,8 @@ import { Users, TrendingUp, DollarSign, Star, Building2 } from "lucide-react"
 const stats = [
   {
     icon: Users,
-    value: 24000,
-    suffix: "+",
+    value: 24,
+    suffix: "K+",
     label: "Career Transitions",
     sublabel: "",
     color: "from-blue-500 to-cyan-500"
@@ -95,7 +95,7 @@ function StatCard({ stat, index }: { stat: typeof stats[0], index: number }) {
   return (
     <div
       ref={cardRef}
-      className="group relative"
+      className="group relative mx-3"
       style={{
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0) scale(1)' : 'translateY(40px) scale(0.9)',
@@ -127,7 +127,7 @@ function StatCard({ stat, index }: { stat: typeof stats[0], index: number }) {
             animation: 'shine 3s infinite'
           }}
         />
-
+       <div className="relative z-10 flex gap-3">
         {/* Icon */}
         <div className="relative mb-6">
           <div 
@@ -139,17 +139,18 @@ function StatCard({ stat, index }: { stat: typeof stats[0], index: number }) {
 
         {/* Number */}
         <div className="relative mb-3">
-          <h3 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+          <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">
             {stat.decimal ? count.toFixed(1) : Math.floor(count).toLocaleString()}
             <span className={`bg-gradient-to-r ${stat.color} bg-clip-text text-transparent`}>
               {stat.suffix}
             </span>
           </h3>
         </div>
+        </div>
 
         {/* Labels */}
         <div className="relative">
-          <p className="text-xl font-semibold text-slate-200 leading-tight">
+          <p className="text-l font-semibold text-slate-200 leading-tight">
             {stat.label}
           </p>
           {stat.sublabel && (
@@ -246,26 +247,26 @@ export default function StatsSection() {
         <div className="relative max-w-7xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-orange-300 mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-orange-300 mb-4">
               Our Impact in{" "}
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Numbers
               </span>
             </h2>
-            <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+            <p className="text-l text-slate-400 max-w-2xl mx-auto">
               Join thousands of successful students who transformed their careers with us
             </p>
           </div>
 
           {/* Stats grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2 ">
             {stats.map((stat, index) => (
               <StatCard key={index} stat={stat} index={index} />
             ))}
           </div>
 
           {/* Bottom decoration */}
-          <div className="mt-20 flex items-center justify-center gap-4 text-slate-500">
+          <div className="mt-20 flex items-center justify-center gap-2 text-slate-500">
             <div className="h-px w-20 bg-gradient-to-r from-transparent to-slate-700" />
             <span className="text-sm font-medium">Trusted by industry leaders worldwide</span>
             <div className="h-px w-20 bg-gradient-to-l from-transparent to-slate-700" />

@@ -107,19 +107,19 @@ const [activeTab, setActiveTab] = useState<CourseCategory>('recommended');
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 py-20 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header with animated gradient */}
-        <div className="text-center mb-16 space-y-4">
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-4 animate-fade-in">
+        <div className="text-center mb-6 space-y-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4 animate-fade-in">
             Explore Our <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Courses</span>
-          </h1>
+          </h2>
           <p className="text-slate-600 text-lg max-w-2xl mx-auto">
             Transform your career with industry-leading programs designed by experts
           </p>
         </div>
 
         {/* Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
           {tabs.map((tab) => (
             <button
               key={tab.id}

@@ -27,7 +27,7 @@ const SignatureFramework = () => {
   };
 
   return (
-    <div className="relative py-24 bg-gradient-to-br from-slate-50 via-white to-gray-50 overflow-hidden">
+    <div className="relative py-14 bg-gradient-to-br from-slate-50 via-white to-gray-50 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-[5%] w-[500px] h-[500px] bg-[#fc6f08]/10 rounded-full blur-3xl animate-float-1"></div>
@@ -35,30 +35,30 @@ const SignatureFramework = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-gradient-to-r from-[#fc6f08]/5 to-[#003b7b]/5 rounded-full blur-3xl animate-pulse-slow"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 px-6 py-2 bg-white rounded-full shadow-lg border border-gray-100 mb-6">
+        <div className="text-center mb-4">
+          {/*<div className="inline-flex items-center space-x-2 px-6 py-2 bg-white rounded-full shadow-lg border border-gray-100 mb-6">
             <Sparkles className="w-4 h-4 text-[#fc6f08] animate-pulse" />
             <span className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fc6f08] to-[#003b7b]">
               EXCLUSIVE FRAMEWORKS
             </span>
             <Sparkles className="w-4 h-4 text-[#003b7b] animate-pulse" style={{ animationDelay: '0.5s' }} />
-          </div>
+          </div> */}
 
-          <h2 className="text-6xl md:text-7xl font-black mb-6">
+          <h2 className=" flex justify-center items-center gap-4 text-4xl md:text-5xl font-black mb-3">
             <span className="text-gray-900">Signature</span>
-            <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-[#fc6f08] to-[#003b7b] animate-gradient-x">
+            <span className=" text-transparent bg-clip-text bg-gradient-to-r from-[#fc6f08] to-[#003b7b] animate-gradient-x">
               Framework
             </span>
           </h2>
 
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-l text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Frameworks designed to simplify learning and build real skills.
           </p>
 
           {/* Decorative Line */}
-          <div className="mt-8 flex items-center justify-center space-x-4">
+          <div className="mt-4 flex items-center justify-center space-x-4">
             <div className="h-[2px] w-24 bg-gradient-to-r from-transparent to-[#fc6f08]"></div>
             <div className="w-2 h-2 rounded-full bg-[#fc6f08] animate-pulse"></div>
             <div className="h-[2px] w-24 bg-gradient-to-r from-[#fc6f08] to-[#003b7b]"></div>
@@ -323,7 +323,7 @@ const SignatureFramework = () => {
         </div>
 
         {/* Bottom CTA Section */}
-        <div className="mt-20 text-center">
+        <div className="mt-10 text-center">
           <div className="inline-block relative group cursor-pointer">
             {/* Glow */}
             <div className="absolute -inset-4 bg-gradient-to-r from-[#fc6f08] to-[#003b7b] rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
