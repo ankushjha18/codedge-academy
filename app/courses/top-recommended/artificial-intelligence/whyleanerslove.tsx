@@ -103,9 +103,9 @@ export default function WhyLearnersLove() {
       <div className="absolute top-40 right-20 w-16 h-16 border-4 border-blue-200 rounded-full animate-bounce-slow opacity-30" />
       <div className="absolute bottom-40 right-40 w-24 h-24 border-4 border-pink-200 transform rotate-12 animate-pulse opacity-30" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-15">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-15">
           <div className="inline-block mb-6 animate-fade-in">
             <div className="flex items-center gap-2 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full px-6 py-3 shadow-lg">
               <Star className="w-5 h-5 text-purple-600 animate-pulse" />
@@ -113,11 +113,11 @@ export default function WhyLearnersLove() {
             </div>
           </div>
           
-          <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-transparent bg-clip-text animate-gradient">
+          <h1 className="text-4xl font-bold mb-3 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-transparent bg-clip-text animate-gradient">
             Why Learners Love This Program
           </h1>
           
-          <p className="text-gray-600 text-xl max-w-3xl mx-auto">
+          <p className="text-gray-600 text-md max-w-xl mx-auto">
             Join thousands of successful learners who transformed their careers with our comprehensive program
           </p>
         </div>
@@ -140,8 +140,8 @@ export default function WhyLearnersLove() {
                 
                 <div className="relative z-10 flex flex-col h-full">
                   {/* Icon Section */}
-                  <div className="flex justify-center mb-6">
-                    <div className={`relative w-24 h-24 bg-gradient-to-br ${feature.gradient} rounded-2xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl`}>
+                  <div className="flex justify-center mb-3">
+                    <div className={`relative w-20 h-20 bg-gradient-to-br ${feature.gradient} rounded-2xl flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-2xl`}>
                       <feature.icon className="w-12 h-12 text-white" strokeWidth={1.5} />
                       
                       {/* Animated ring */}
@@ -151,7 +151,7 @@ export default function WhyLearnersLove() {
 
                   {/* Content Section */}
                   <div className="flex-1 space-y-4 text-center">
-                    <h3 className={`text-2xl font-bold ${feature.iconColor} group-hover:scale-105 transition-transform duration-300`}>
+                    <h3 className={`text-xl font-bold ${feature.iconColor} group-hover:scale-105 transition-transform duration-300`}>
                       {feature.title}
                     </h3>
                     
@@ -160,7 +160,7 @@ export default function WhyLearnersLove() {
                     </p>
 
                     {/* Stats badges */}
-                    <div className="flex flex-wrap justify-center gap-3 pt-4">
+                    <div className="flex flex-wrap justify-center gap-2 pt-3">
                       {feature.stats.map((stat, idx) => (
                         <div
                           key={idx}
@@ -199,8 +199,8 @@ export default function WhyLearnersLove() {
         </div>
 
         {/* What Our Program Offers Section */}
-        <div className="mt-32">
-          <div className="text-center mb-16">
+        <div className="mt-12">
+          <div className="text-center mb-9">
             <div className="inline-block mb-6">
               <div className="flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full px-6 py-3 shadow-lg">
                 <Rocket className="w-5 h-5 text-blue-600 animate-bounce-slow" />
@@ -208,11 +208,11 @@ export default function WhyLearnersLove() {
               </div>
             </div>
             
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
               What Our Program Offers
             </h2>
             
-            <p className="text-gray-600 text-xl max-w-3xl mx-auto">
+            <p className="text-gray-600 text-xl max-w-xl mx-auto">
               Everything you need to succeed in your learning journey
             </p>
           </div>
@@ -224,7 +224,7 @@ export default function WhyLearnersLove() {
               return (
                 <div
                   key={index}
-                  className={`group relative bg-white rounded-2xl p-6 border-2 ${colorClasses.border} hover:border-transparent shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden transform hover:-translate-y-2`}
+                  className={`group relative bg-white rounded-2xl p-5 border-2 ${colorClasses.border} hover:border-transparent shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden transform hover:-translate-y-2`}
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
                   {/* Animated background gradient */}
@@ -236,15 +236,17 @@ export default function WhyLearnersLove() {
                   </div>
 
                   <div className="relative z-10">
+                    <div className='flex gap-4'>
                     {/* Icon */}
-                    <div className={`w-14 h-14 ${colorClasses.bg} rounded-xl flex items-center justify-center mb-4 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-lg`}>
-                      <offer.icon className="w-7 h-7 text-white" strokeWidth={2} />
+                    <div className={`w-10 h-10 ${colorClasses.bg} rounded-md flex items-center justify-center  transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 shadow-lg`}>
+                      <offer.icon className="w-5 h-5 text-white" strokeWidth={2} />
                     </div>
 
                     {/* Title */}
-                    <h3 className={`text-lg font-bold text-gray-800 group-hover:${colorClasses.text} transition-colors duration-300`}>
+                    <h3 className={`text-md font-bold text-gray-800 group-hover:${colorClasses.text} transition-colors duration-300`}>
                       {offer.title}
                     </h3>
+                    </div>
 
                     {/* Animated check mark */}
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

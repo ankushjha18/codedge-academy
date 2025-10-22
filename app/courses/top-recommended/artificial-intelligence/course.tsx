@@ -87,7 +87,7 @@ export default function WebDevHero() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen">
+      <div className="relative z-10 container mx-auto px-15 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen">
         {/* Left content */}
         <div className="flex-1 space-y-8 mb-12 lg:mb-0">
           {/* Logo/Brand /}
@@ -110,7 +110,7 @@ export default function WebDevHero() {
               </div>
             </div>
             
-            <h1 className="text-6xl lg:text-7xl font-bold">
+            <h1 className="text-4xl lg:text-5xl font-bold">
               <span className="text-white">Become a </span>
               <span className="bg-gradient-to-r from-purple-400 via-cyan-400 to-blue-400 text-transparent bg-clip-text animate-gradient">
                 Full Stack
@@ -137,9 +137,9 @@ export default function WebDevHero() {
             ].map((feature, idx) => (
               <div
                 key={idx}
-                className="group bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 cursor-pointer"
+                className="flex gap-1 bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-sm hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 cursor-pointer"
               >
-                <div className={`w-10 h-10 bg-gradient-to-br ${feature.color} rounded-lg flex items-center justify-center mb-3 group-hover:rotate-12 transition-transform duration-300`}>
+                <div className={`w-10 h-10 bg-gradient-to-br ${feature.color} rounded-lg flex items-center justify-center mb-1 group-hover:rotate-12 transition-transform duration-300`}>
                   <feature.icon className="w-5 h-5 text-white" />
                 </div>
                 <p className="text-white font-medium">{feature.text}</p>
@@ -181,7 +181,7 @@ export default function WebDevHero() {
 
         {/* Right visual element */}
         <div className="flex-1 flex items-center justify-center">
-          <div className="relative w-full max-w-lg">
+          <div className="relative w-full max-w-md">
             {/* Floating cards */}
             <div className="relative w-full aspect-square">
               {/* Center glow */}

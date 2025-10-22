@@ -70,7 +70,7 @@ export default function MasterclassSection() {
   return (
     <div
       ref={sectionRef}
-      className="relative min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 py-20 px-4 overflow-hidden"
+      className="relative min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 py-13 px-4 overflow-hidden"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -110,35 +110,35 @@ export default function MasterclassSection() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header Section */}
         <div
-          className="text-center mb-16"
+          className="text-center mb-10"
           style={{
             opacity: scrollY,
             transform: `translateY(${(1 - scrollY) * 50}px)`
           }}
         >
-          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg mb-6 border border-blue-100">
+          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg mb-3 border border-blue-100">
             <Sparkles className="w-5 h-5 text-yellow-500 animate-pulse" />
             <span className="text-sm font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               LIMITED SEATS AVAILABLE
             </span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               Attend Masterclass
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-sm md:text-xl text-gray-600 max-w-2xl mx-auto">
             Free masterclass with expert insights to launch careers.
           </p>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {masterclasses.map((course, index) => (
             <div
               key={course.id}
@@ -171,7 +171,7 @@ export default function MasterclassSection() {
 
                 {/* Top Gradient Section */}
                 <div
-                  className={`relative h-64 bg-gradient-to-br ${course.color} p-8 overflow-hidden`}
+                  className={`relative h-50 bg-gradient-to-br ${course.color} p-8 overflow-hidden`}
                 >
                   {/* Animated Pattern */}
                   <div className="absolute inset-0 opacity-20">
@@ -198,10 +198,10 @@ export default function MasterclassSection() {
                     <div className="text-6xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
                       {course.icon}
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-2">
+                    <h3 className="text-xl font-bold text-white mb-2">
                       From <span className="text-yellow-300">Zero</span> to
                     </h3>
-                    <h3 className="text-2xl font-bold text-white mb-4">
+                    <h3 className="text-xl font-bold text-white mb-2">
                       Data <span className="text-yellow-300">Hero</span>
                     </h3>
                     <p className="text-white/90 text-sm">
@@ -210,7 +210,7 @@ export default function MasterclassSection() {
                   </div>
 
                   {/* Floating Icon */}
-                  <div className="absolute bottom-4 right-4 text-6xl transform group-hover:rotate-12 group-hover:scale-125 transition-all duration-500">
+                  <div className="absolute bottom-20 right-4 text-6xl transform group-hover:rotate-12 group-hover:scale-125 transition-all duration-500">
                     {course.image}
                   </div>
                 </div>
@@ -278,7 +278,7 @@ export default function MasterclassSection() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
+        {/* Bottom CTA /}
         <div className="text-center mt-16">
           <p className="text-gray-600 mb-4">
             🎯 Join <span className="font-bold text-purple-600">5000+</span> students who transformed their careers
@@ -295,7 +295,7 @@ export default function MasterclassSection() {
               />
             ))}
           </div>
-        </div>
+        </div>*/}
       </div>
 
       <style jsx>{`

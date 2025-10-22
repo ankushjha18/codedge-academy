@@ -65,30 +65,25 @@ export default function OverviewSection() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white py-20 px-6">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-gradient-to-b from-gray-50 to-white py-15 px-6">
+      <div className="max-w-6xl mx-auto">
         {/* Overview Section */}
         <div className="mb-20">
-          <div className="inline-block mb-6">
-            <div className="flex items-center gap-2 bg-blue-100 rounded-full px-4 py-2">
-              <Sparkles className="w-4 h-4 text-blue-600" />
-              <span className="text-blue-700 font-semibold text-sm">COURSE DETAILS</span>
-            </div>
-          </div>
+          
 
-          <h2 className="text-5xl font-bold text-gray-900 mb-8">
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">
             Overview
           </h2>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-md leading-relaxed">
                 Master's in Web Development is a transformative 9-month program designed to empower learners from all educational and professional backgrounds to excel in the world of modern web development.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-md leading-relaxed">
                 The curriculum combines industry-relevant theory with hands-on experience, covering React, Node.js, TypeScript, Next.js, MongoDB, and cutting-edge DevOps tools. Delivered by top-tier industry experts, the program includes live sessions, capstone projects, and case studies to ensure practical exposure.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed">
+              <p className="text-gray-700 text-md leading-relaxed">
                 Learners earn prestigious certifications from industry leaders, enhancing their credibility and global employability. Whether you're a beginner or a working professional, this program equips you to become fully job-ready in today's tech-driven world.
               </p>
 
@@ -135,7 +130,7 @@ export default function OverviewSection() {
         </div>
 
         {/* Key Highlights Section */}
-        <div className="pt-12">
+        <div className="pt-10">
           <h2 className="text-4xl font-bold text-gray-900 mb-12">
             Key Highlights
           </h2>
@@ -157,7 +152,7 @@ export default function OverviewSection() {
                     <item.icon className="w-7 h-7 text-white" />
                   </div>
                   
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors duration-300">
+                  <h3 className="text-md font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors duration-300">
                     {item.title}
                   </h3>
                   

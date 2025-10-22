@@ -90,7 +90,7 @@ export default function AlumniCarousel() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 py-10 px-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-white text-center mb-16 animate-fade-in">
           Explore and Connect with Our Alumni
         </h1>
