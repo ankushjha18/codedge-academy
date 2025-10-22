@@ -158,7 +158,7 @@ interface Project {
 
 
       <main className="relative z-10 max-w-7xl mx-auto px-6 py-12">
-        {/* Curriculum Section */}
+        {/* Curriculum Section /}
         <section className="mb-20">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">
             Course Curriculum Breakdown
