@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, ChevronRight, Sparkles, Zap } from 'lucide-react';
+import PopupForm from './popupform';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -106,7 +107,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-30 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-20 transition-all duration-500 ${
           isScrolled 
             ? 'bg-white/95 backdrop-blur-xl shadow-2xl shadow-orange-100/30' 
             : 'bg-white/90 backdrop-blur-lg'
@@ -300,12 +301,14 @@ const Navbar = () => {
             </div>
 
             {/* Enroll Button with magnetic effect */}
+            <PopupForm
+            trigger={
             <div className="hidden md:block relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 rounded-full blur-2xl opacity-0 group-hover:opacity-70 transition-opacity duration-500 animate-pulse-glow"></div>
               <a
-                href="/enroll"
+                href="/#"
                 className={`relative block px-8 py-3 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white font-bold rounded-full overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-110 hover:shadow-orange-500/50 bg-size-200 animate-gradient-x ${
-                  isActive('/enroll') ? 'ring-4 ring-orange-300' : ''
+                  isActive('/#') ? 'ring-4 ring-orange-300' : ''
                 }`}
               >
                 <span className="relative z-10 flex items-center space-x-2">
@@ -325,6 +328,8 @@ const Navbar = () => {
                 <span className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[200%] bg-gradient-to-r from-transparent via-white/40 to-transparent skew-x-12 transition-transform duration-1000"></span>
               </a>
             </div>
+            }
+            />
 
             {/* Mobile Menu Button */}
             <button

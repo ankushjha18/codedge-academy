@@ -7,6 +7,7 @@ import { Suspense } from "react"
 import "./globals.css"
 import Navbar from "@/components/navbar"
 import { Footer } from "@/components/footer"
+import GlobalPopup from "@/components/global-popup"
 
 export const metadata: Metadata = {
   title: "codege academy - Learn to Code, Build Projects, and Launch Your Tech Career",
@@ -28,7 +29,9 @@ export default function RootLayout({
           <main id="main">{children}</main>
           <Analytics />
           <Footer />
+          <GlobalPopup />
         </Suspense>
+         
       </body>
     </html>
   )
