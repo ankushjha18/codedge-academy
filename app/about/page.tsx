@@ -8,6 +8,7 @@ import AboutUsSection from "./aboutus"
 import InspirationSection from "./ourinspiration"
 import StatsSection from "./aboutstats"
 import FoundersSection from "./ourfounders"
+import TopRatedVideoSection from "../reviews/infovideo"
 
 export default function AboutPage() {
   return (
@@ -19,6 +20,7 @@ export default function AboutPage() {
       <LogoTicker />
       <StatsSection />
       <FoundersSection />
+      <TopRatedVideoSection />
       
       <TestimonialsSection />
       <AlumniCarousel />
