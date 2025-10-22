@@ -6,21 +6,21 @@ export default function FeesSection() {
   const [hoveredCard, setHoveredCard] = useState<string|null>(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-10 sm:py-16 md:py-13 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 sm:top-20 left-5 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-10 sm:bottom-20 right-5 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-700"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16 animate-fade-in">
+        <div className="text-center mb-6 sm:mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-4 sm:px-6 py-2 mb-4 sm:mb-6">
             <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-blue-400" />
             <span className="text-blue-300 text-xs sm:text-sm font-semibold">Investment in Your Future</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 px-4">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 px-4">
             Program Fees & Financing
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4">
@@ -28,7 +28,7 @@ export default function FeesSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
+        <div className="grid lg:grid-cols-3 gap-6 sm:gap-8 mb-5 sm:mb-8">
           {/* Main Program Card */}
           <div 
             className="lg:col-span-2 relative group"
@@ -43,10 +43,10 @@ export default function FeesSection() {
                 TOP RATED PROGRAM
               </div>
 
-              <div className="p-6 sm:p-8 pt-14 sm:pt-16">
+              <div className="p-6 sm:p-8 pt-10 sm:pt-16">
                 {/* Price Section */}
                 <div className="mb-6 sm:mb-8 transform transition-transform duration-500 group-hover:scale-105">
-                  <h2 className="text-xl sm:text-2xl text-blue-300 font-semibold mb-2 sm:mb-3">Program Fee</h2>
+                  <h2 className="text-lg sm:text-xl text-blue-300 font-semibold mb-2 sm:mb-3">Program Fee</h2>
                   <div className="flex flex-wrap items-baseline gap-2">
                     <span className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">₹89,999</span>
                     <span className="text-gray-400 text-sm sm:text-base md:text-lg">(inclusive of taxes)</span>

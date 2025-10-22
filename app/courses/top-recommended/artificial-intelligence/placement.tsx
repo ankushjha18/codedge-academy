@@ -71,7 +71,7 @@ export default function PlacementSection() {
   ];
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen bg-black overflow-hidden py-20 px-4">
+    <section ref={sectionRef} className="relative min-h-screen bg-black overflow-hidden py-13 px-4">
       {/* Cinematic Background with Film Grain */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-film-grain opacity-[0.03]" />
@@ -112,10 +112,10 @@ export default function PlacementSection() {
         <div className="absolute inset-0 bg-radial-vignette pointer-events-none" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto">
         {/* Cinematic Header with Zoom Effect */}
         <div 
-          className="text-center mb-20 space-y-6"
+          className="text-center mb-10 space-y-6"
           style={{
             transform: `scale(${0.8 + scrollY * 0.2})`,
             opacity: scrollY,
@@ -124,7 +124,7 @@ export default function PlacementSection() {
         >
           <div className="relative inline-block">
             {/* Cinematic text with chromatic aberration effect */}
-            <h2 className="relative text-6xl md:text-7xl font-black mb-4">
+            <h2 className="relative text-6xl md:text-4xl font-black mb-4">
               <span className="absolute inset-0 text-orange-500 blur-sm" style={{ transform: 'translate(-2px, 0)' }}>
                 From Learning to Placement
               </span>
@@ -148,7 +148,7 @@ export default function PlacementSection() {
           </div>
           
           <p 
-            className="text-2xl md:text-3xl text-slate-300 font-light tracking-wider"
+            className="text-xl md:text-xl text-slate-300 font-light tracking-wider"
             style={{
               animation: 'fadeInText 1s ease-out 0.5s both'
             }}
@@ -158,7 +158,7 @@ export default function PlacementSection() {
         </div>
 
         {/* Features Grid with Parallax */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
           {features.map((feature, index) => (
             <CinematicCard
               key={index}
@@ -350,17 +350,17 @@ function CinematicCard({ feature, index, scrollY }: CinematicCardProps) {
         />
 
         {/* Icon with cinematic entrance */}
-        <div className={`relative mb-6 inline-block p-4 rounded-xl bg-gradient-to-br ${feature.color} transform transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg`}
+        <div className={`relative mb-3 inline-block p-4 rounded-xl bg-gradient-to-br ${feature.color} transform transition-all duration-700 group-hover:scale-125 group-hover:rotate-12 shadow-lg`}
           style={{
             boxShadow: isHovered ? '0 20px 60px rgba(0,0,0,0.5)' : '0 10px 30px rgba(0,0,0,0.3)'
           }}
         >
-          <Icon className="w-8 h-8 text-white" />
+          <Icon className="w-5 h-5 text-white" />
           <div className="absolute inset-0 rounded-xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
 
         {/* Content with typewriter effect on hover */}
-        <h3 className="relative text-2xl font-bold text-white mb-4 transition-all duration-500 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-blue-400">
+        <h3 className="relative text-lg font-bold text-white mb-2 transition-all duration-500 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-orange-400 group-hover:to-blue-400">
           {feature.title}
         </h3>
         <p className="relative text-slate-400 leading-relaxed group-hover:text-slate-200 transition-all duration-500">

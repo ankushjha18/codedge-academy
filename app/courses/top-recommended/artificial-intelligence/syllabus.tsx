@@ -136,11 +136,11 @@ export default function SyllabusSection() {
         <div className="absolute inset-0 bg-grid-pattern opacity-[0.02]" />
       </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 max-w-5xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 space-y-6">
+        <div className="text-center mb-10 space-y-6">
           <div className="inline-block">
-            <h2 className="text-5xl md:text-6xl font-black text-slate-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-2">
               Course <span className="relative inline-block">
                 <span className="relative z-10 bg-gradient-to-r from-orange-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Syllabus
@@ -308,12 +308,12 @@ function SyllabusModule({ module, index, isExpanded, isCompleted, onToggle, onCo
           <div className="flex items-start gap-4 md:gap-6 pr-16 md:pr-20">
             {/* Icon */}
             <div className={`p-4 md:p-5 rounded-2xl bg-gradient-to-br ${module.color} transform transition-all duration-500 group-hover:scale-110 group-hover:-rotate-6 shadow-lg`}>
-              <Icon className="w-6 h-6 md:w-8 md:h-8 text-white" />
+              <Icon className="w-3 h-3 md:w-4 md:h-4 text-white" />
             </div>
 
             {/* Content */}
             <div className="flex-1 min-w-0">
-              <h3 className={`text-2xl md:text-3xl font-bold mb-2 transition-all duration-300 ${
+              <h3 className={`text-xl md:text-xl font-bold mb-1 transition-all duration-300 ${
                 isExpanded ? 'text-transparent bg-clip-text bg-gradient-to-r ' + module.color : 'text-slate-900'
               }`}>
                 {module.title}
@@ -330,7 +330,7 @@ function SyllabusModule({ module, index, isExpanded, isCompleted, onToggle, onCo
                 </span>
               </div>
 
-              <p className="text-slate-600 leading-relaxed mb-4">
+              <p className="text-slate-600 leading-relaxed mb-2">
                 {module.description}
               </p>
 

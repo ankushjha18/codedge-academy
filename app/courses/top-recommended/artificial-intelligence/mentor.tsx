@@ -119,16 +119,16 @@ export default function MentorsCarousel() {
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-orange-100/30 rounded-full blur-2xl animate-pulse" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-5xl md:text-6xl font-black text-slate-900">
+        <div className="text-center mb-10 space-y-4">
+          <h2 className="text-2xl md:text-5xl font-black text-slate-900">
             Meet Our <span className="relative inline-block">
               <span className="relative z-10">Mentors</span>
               <span className="absolute bottom-2 left-0 w-full h-3 bg-gradient-to-r from-orange-400 to-blue-400 -rotate-1 -z-10"></span>
             </span>
           </h2>
-          <p className="text-xl md:text-2xl text-slate-600 font-light max-w-3xl mx-auto">
+          <p className="text-md md:text-xl text-slate-600 font-light max-w-3xl mx-auto">
             Guiding You Every Step of the Way Towards Professional Excellence
           </p>
         </div>
@@ -195,12 +195,12 @@ export default function MentorsCarousel() {
 
           {/* Auto-play indicator */}
           <div className="text-center mt-6">
-            <button
+            {/*<button
               onClick={() => setIsAutoPlaying(!isAutoPlaying)}
               className="text-sm text-slate-500 hover:text-slate-700 transition-colors"
             >
               {isAutoPlaying ? '⏸ Pause Auto-play' : '▶ Resume Auto-play'}
-            </button>
+            </button>*/}
           </div>
         </div>
       </div>
