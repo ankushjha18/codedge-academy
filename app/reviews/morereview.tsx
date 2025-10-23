@@ -64,14 +64,14 @@ const ReviewsSection = () => {
   const reviews = activeTab === 'linkedin' ? linkedinReviews : googleReviews;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-10 px-4">
+      <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             What Our Students Say
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-md text-gray-600">
             Real experiences from real learners
           </p>
         </div>

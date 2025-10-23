@@ -132,7 +132,7 @@ const VideoTestimonialCarousel = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <style jsx>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
@@ -244,18 +244,18 @@ const VideoTestimonialCarousel = () => {
       <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl opacity-20 animate-float"></div>
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-5xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 animate-slideInUp">
-          <div className="inline-block mb-4">
+        <div className="text-center mb-6 animate-slideInUp">
+          <div className="inline-block mb-2">
             <span className="px-6 py-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full text-white text-sm font-semibold tracking-wide uppercase shadow-lg animate-glow">
               Testimonials
             </span>
           </div>
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-white mb-6 leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-white mb-3 leading-tight">
             Client Love Stories
           </h2>
-          <p className="text-xl md:text-2xl text-purple-200 max-w-3xl mx-auto font-light">
+          <p className="text-lg md:text-xl text-purple-200 max-w-3xl mx-auto font-light">
             Real people, real results, real impact on their business growth
           </p>
         </div>
@@ -263,7 +263,7 @@ const VideoTestimonialCarousel = () => {
         {/* Carousel Container */}
         <div className="relative">
           {/* Grid Layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
             {getCurrentItems().map((testimonial, index) => (
               <div
                 key={testimonial.id}
@@ -343,7 +343,7 @@ const VideoTestimonialCarousel = () => {
             {/* Previous Button */}
             <button
               onClick={prevPage}
-              className="w-14 h-14 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-2xl group"
+              className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-2xl group"
               aria-label="Previous page"
             >
               <ChevronLeft className="w-6 h-6 text-white group-hover:text-purple-300" />
@@ -368,7 +368,7 @@ const VideoTestimonialCarousel = () => {
             {/* Next Button */}
             <button
               onClick={nextPage}
-              className="w-14 h-14 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-2xl group"
+              className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-2xl group"
               aria-label="Next page"
             >
               <ChevronRight className="w-6 h-6 text-white group-hover:text-purple-300" />
@@ -376,7 +376,7 @@ const VideoTestimonialCarousel = () => {
           </div>
 
           {/* Stats Counter */}
-          <div className="mt-12 text-center">
+          <div className="mt-8 text-center">
             <p className="text-purple-300 text-sm">
               Showing {currentPage * itemsPerPage + 1}-{Math.min((currentPage + 1) * itemsPerPage, testimonials.length)} of {testimonials.length} testimonials
             </p>

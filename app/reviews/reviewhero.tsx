@@ -125,11 +125,11 @@ export default function ReviewPage() {
         <div className="absolute -bottom-8 left-20 w-72 h-72 bg-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
       {/* Hero Section */}
-      <section ref={heroRef} className="relative pt-12 pb-20 px-6 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <section ref={heroRef} className="relative pt-10 pb-6 px-6 overflow-hidden">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 animate-fade-up">
-            <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight">
+            <h1 className="text-3xl lg:text-5xl font-extrabold leading-tight">
               Creating Impact<br />
               <span className="text-gradient">Through Outcomes</span>
             </h1>
