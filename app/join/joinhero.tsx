@@ -105,7 +105,7 @@ const HeroSection = () => {
       <FloatingIcon icon={Sparkles} delay={1.5} size="w-12 h-12" position="bottom-32 left-20 hidden lg:block" />
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">

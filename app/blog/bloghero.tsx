@@ -186,10 +186,10 @@ export default function BlogHero() {
       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-20">
         <div className="max-w-5xl mx-auto">
           {/* Badge */}
-          <div className="flex justify-center mb-8 animate-fade-in">
+          <div className="flex justify-center mb-3 animate-fade-in">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 transition-all duration-300 hover:scale-105">
               <Sparkles className="w-4 h-4 text-yellow-400 animate-pulse" />
               <span className="text-sm font-medium">Welcome to our blog</span>
