@@ -47,9 +47,9 @@ const InspirationSection = () => {
         <div className="absolute bottom-20 left-1/2 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-20 space-y-6">
+        <div className="text-center mb-10 space-y-6">
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
             <Sparkles className="w-5 h-5 animate-pulse" />
@@ -57,7 +57,7 @@ const InspirationSection = () => {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight">
             <span className="block text-gray-900">Driven by</span>
             <span className="block bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 text-transparent bg-clip-text animate-gradient">
               innovation and impact
@@ -65,12 +65,12 @@ const InspirationSection = () => {
           </h1>
 
           {/* Subheading */}
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Codedge Academy empowers learners toward transformation and success.
           </p>
 
           {/* Decorative Line */}
-          <div className="flex items-center justify-center space-x-4 pt-6">
+          <div className="flex items-center justify-center space-x-4 ">
             <div className="h-1 w-20 bg-gradient-to-r from-transparent to-purple-400 rounded-full"></div>
             <Lightbulb className="w-6 h-6 text-purple-500 animate-pulse" />
             <div className="h-1 w-20 bg-gradient-to-l from-transparent to-blue-400 rounded-full"></div>
@@ -94,30 +94,30 @@ const InspirationSection = () => {
               <div className={`relative h-full bg-gradient-to-br ${item.bgGradient} backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/50 transform hover:-translate-y-3`}>
                 <div className="p-8 flex flex-col h-full">
                   {/* Number */}
-                  <div className="relative mb-6">
-                    <span className={`text-7xl font-bold bg-gradient-to-br ${item.gradient} text-transparent bg-clip-text opacity-90 transform transition-all duration-500 ${activeCard === index ? 'scale-110' : 'scale-100'}`}>
+                  <div className="relative mb-3">
+                    <span className={`text-5xl font-bold bg-gradient-to-br ${item.gradient} text-transparent bg-clip-text opacity-90 transform transition-all duration-500 ${activeCard === index ? 'scale-110' : 'scale-100'}`}>
                       {item.number}
                     </span>
                     <div className={`absolute -bottom-2 left-0 h-2 bg-gradient-to-r ${item.gradient} rounded-full transition-all duration-500 ${activeCard === index ? 'w-20' : 'w-0'}`}></div>
                   </div>
 
                   {/* Icon */}
-                  <div className={`bg-gradient-to-br ${item.gradient} p-4 rounded-2xl text-white shadow-lg inline-flex mb-6 transform transition-all duration-500 ${activeCard === index ? 'rotate-12 scale-110' : 'rotate-0 scale-100'}`}>
+                  <div className={`bg-gradient-to-br ${item.gradient} p-4 rounded-2xl text-white shadow-lg inline-flex mb-3 transform transition-all duration-500 ${activeCard === index ? 'rotate-12 scale-110' : 'rotate-0 scale-100'}`}>
                     {item.icon}
                   </div>
 
                   {/* Title */}
-                  <h2 className={`text-3xl font-bold bg-gradient-to-r ${item.gradient} text-transparent bg-clip-text mb-4 transform transition-all duration-500`}>
+                  <h2 className={`text-2xl font-bold bg-gradient-to-r ${item.gradient} text-transparent bg-clip-text mb-4 transform transition-all duration-500`}>
                     {item.title}
                   </h2>
 
                   {/* Subtitle */}
-                  <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                  <h3 className="text-md font-semibold text-gray-800 mb-3">
                     {item.subtitle}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-base text-gray-700 leading-relaxed mb-6 flex-grow">
+                  <p className="text-base text-gray-700 leading-relaxed mb-3 flex-grow">
                     {item.description}
                   </p>
 

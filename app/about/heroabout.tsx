@@ -115,7 +115,7 @@ export default function AboutHeroSection() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 container mx-auto px-6">
+      <div className="relative z-10 container mx-auto px-15">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <div 
@@ -142,7 +142,7 @@ export default function AboutHeroSection() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              <h1 className="text-4xl md:text-4xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 <div className="text-white">Creating</div>
                 <div className="text-white">Impact</div>
                 <div className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 bg-clip-text text-transparent">
@@ -153,7 +153,7 @@ export default function AboutHeroSection() {
 
             {/* Description */}
             <p
-              className={`text-xl text-blue-100/90 leading-relaxed max-w-xl transition-all duration-1000 delay-400 ${
+              className={`text-lg text-blue-100/90 leading-relaxed max-w-xl transition-all duration-1000 delay-400 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
@@ -196,10 +196,10 @@ export default function AboutHeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse" />
               
               {/* Main Illustration Container */}
-              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-16 hover:scale-105 transition-transform duration-500">
+              <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-12 hover:scale-105 transition-transform duration-500">
                 {/* Lightbulb Circle */}
                 <div className="relative">
-                  <div className="w-64 h-64 mx-auto bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center relative overflow-hidden group shadow-2xl shadow-orange-500/50">
+                  <div className="w-60 h-60 mx-auto bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center relative overflow-hidden group shadow-2xl shadow-orange-500/50">
                     <div className="absolute inset-0 bg-gradient-to-br from-yellow-300/30 to-transparent animate-pulse" />
                     
                     {/* Lightbulb Icon */}

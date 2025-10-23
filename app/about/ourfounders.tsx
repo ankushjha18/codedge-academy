@@ -16,7 +16,8 @@ const FoundersSection = () => {
       gradient: "from-blue-600 to-cyan-600",
       bgGradient: "from-blue-50 to-cyan-50",
       accentColor: "blue",
-      highlights: ["AI & Product Engineering", "Business Transformation", "Curriculum Innovation"]
+      highlights: ["AI & Product Engineering", "Business Transformation", "Curriculum Innovation"],
+      image: "/images/founder1.jpg"
     },
     {
       name: "Amit Tiwari",
@@ -28,12 +29,13 @@ const FoundersSection = () => {
       gradient: "from-purple-600 to-pink-600",
       bgGradient: "from-purple-50 to-pink-50",
       accentColor: "purple",
-      highlights: ["User-Centric AI", "Data Science", "Learner Experience"]
+      highlights: ["User-Centric AI", "Data Science", "Learner Experience"],
+      image: "/images/founder1.jpg",
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-blue-50 py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
@@ -41,22 +43,22 @@ const FoundersSection = () => {
         <div className="absolute bottom-10 left-1/3 w-96 h-96 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-20 space-y-6">
+        <div className="text-center mb-9 space-y-6">
           <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
             <Users className="w-5 h-5" />
             <span className="font-semibold text-sm tracking-wider uppercase">Meet The Visionaries</span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
             <span className="text-gray-900">Our </span>
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
               Founders
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Pioneering the future of tech education with experience from the world's leading companies
           </p>
         </div>
@@ -87,8 +89,20 @@ const FoundersSection = () => {
                       <div className="relative w-48 h-48 mx-auto md:mx-0 rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden shadow-xl">
                         {/* Placeholder for actual image */}
                         <div className="w-full h-full flex items-center justify-center">
-                          <div className={`w-32 h-32 rounded-full bg-gradient-to-br ${founder.gradient} flex items-center justify-center text-white text-4xl font-bold shadow-2xl`}>
-                            {founder.name.split(' ').map(n => n[0]).join('')}
+                          <div className="w-full h-full flex items-center justify-center">
+                            {founder.image ? (
+                              <img
+                                src={founder.image}
+                                alt={founder.name}
+                                className="w-full h-full object-cover rounded-2xl"
+                              />
+                            ) : (
+                              <div
+                                className={`w-32 h-32 rounded-full bg-gradient-to-br ${founder.gradient} flex items-center justify-center text-white text-4xl font-bold shadow-2xl`}
+                              >
+                                {founder.name.split(' ').map(n => n[0]).join('')}
+                              </div>
+                            )}
                           </div>
                         </div>
                         {/* Overlay on hover */}
@@ -134,7 +148,7 @@ const FoundersSection = () => {
                   </div>
 
                   {/* Description */}
-                  <div className="space-y-6">
+                  <div className="space-y-3">
                     <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                       {founder.description}
                     </p>
@@ -173,9 +187,9 @@ const FoundersSection = () => {
         </div>
 
         {/* Bottom Stats Section */}
-        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-12 shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
+        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-7 shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
           <div className="grid md:grid-cols-3 gap-8 text-center text-white">
-            <div className="space-y-2">
+            <div className="space-y-1">
               <div className="flex items-center justify-center space-x-2 mb-3">
                 <Award className="w-8 h-8" />
               </div>

@@ -74,7 +74,7 @@ function StatCard({ stat, index, isVisible }: StatCardProps) {
   
   return (
     <div 
-      className="group relative overflow-hidden rounded-3xl p-8 transition-all duration-500 hover:scale-105"
+      className="  group relative overflow-hidden rounded-3xl p-5 transition-all duration-500 hover:scale-105"
       style={{
         background: `linear-gradient(135deg, ${stat.color}15 0%, ${stat.color}25 100%)`,
         border: `2px solid ${stat.color}30`,
@@ -233,14 +233,14 @@ export default function StatsSection() {
         }
       `}</style>
       
-      <section ref={sectionRef} className="relative py-20 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+      <section ref={sectionRef} className="relative py-10 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-24 -left-24 w-96 h-96 rounded-full opacity-5 bg-gradient-to-r from-purple-500 to-blue-500" />
           <div className="absolute -bottom-24 -right-24 w-96 h-96 rounded-full opacity-5 bg-gradient-to-r from-orange-500 to-purple-500" />
         </div>
         
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-14 relative z-10">
           {/* Header */}
           <div className={`text-center mb-16 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 via-blue-600 to-orange-500 bg-clip-text text-transparent mb-6">

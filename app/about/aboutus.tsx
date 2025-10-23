@@ -39,13 +39,13 @@ const AboutUsSection = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Floating Decorative Elements */}
       <div className="absolute top-20 right-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-float"></div>
       <div className="absolute bottom-40 left-10 w-16 h-16 bg-purple-200 rounded-full opacity-20 animate-float-delay"></div>
       <div className="absolute top-1/2 right-1/4 w-12 h-12 bg-pink-200 rounded-full opacity-20 animate-float-slow"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content Section */}
           <div className="space-y-8">
@@ -56,7 +56,7 @@ const AboutUsSection = () => {
                 <span className="text-sm font-semibold text-gray-700">About Us</span>
               </div>
               
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-4xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">
                   Codedge Academy
                 </span>{' '}
@@ -69,7 +69,7 @@ const AboutUsSection = () => {
             </div>
 
             {/* Description Paragraphs */}
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-6 text-md text-gray-700 leading-relaxed">
               <p>
                 We specialize in{' '}
                 <span className="font-bold text-blue-600">AI</span>,{' '}
@@ -112,69 +112,86 @@ const AboutUsSection = () => {
             </div>
           </div>
 
-          {/* Right Visual Section */}
-          <div className="relative">
-            {/* Central Circle */}
-            <div className="relative w-full max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-              
-              <div className="relative bg-white rounded-full p-8 shadow-2xl border-4 border-white transform hover:scale-105 transition-all duration-500">
-                <div className="aspect-square flex flex-col items-center justify-center text-center space-y-4">
-                  <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center transform hover:rotate-12 transition-transform duration-300">
-                    <GraduationCap className="w-12 h-12 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-3xl font-bold text-gray-900">Codedge</h3>
-                    <p className="text-lg text-gray-600">Academy</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating Badge 1 - Top Right */}
-              <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-400 to-emerald-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float">
-                <div className="flex items-center space-x-2">
-                  <span className="text-2xl">🎓</span>
-                  <span className="font-bold">Full-Service</span>
-                </div>
-              </div>
-
-              {/* Floating Badge 2 - Top Left */}
-              <div className="absolute -top-8 -left-8 bg-blue-400 text-white p-4 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-delay">
-                <BookOpen className="w-8 h-8" />
-              </div>
-
-              {/* Floating Badge 3 - Bottom Right */}
-              <div className="absolute -bottom-4 -right-8 bg-gradient-to-r from-purple-400 to-pink-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-slow">
-                <div className="flex items-center space-x-2">
-                  <span className="text-2xl">✨</span>
-                  <span className="font-bold">Tailored Solutions</span>
-                </div>
-              </div>
-
-              {/* Floating Card - Bottom */}
-              <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl shadow-2xl p-6 w-80 hover:shadow-purple-200 transition-all duration-500 hover:-translate-y-2 border border-purple-100">
-                <div className="text-center space-y-2">
-                  <h4 className="text-xl font-bold text-gray-900">AI & Data Science</h4>
-                  <p className="text-sm text-gray-600">Industry-aligned curriculum with IBM certifications</p>
-                </div>
-              </div>
-
-              {/* Small Floating Icons */}
-              <div className="absolute top-1/4 -left-12 bg-orange-100 p-3 rounded-full shadow-lg animate-float">
-                <span className="text-2xl">📱</span>
-              </div>
-              <div className="absolute bottom-1/3 -right-12 bg-pink-100 p-3 rounded-full shadow-lg animate-float-delay">
-                <span className="text-2xl">🎨</span>
-              </div>
-              <div className="absolute top-1/2 -left-16 bg-purple-100 p-3 rounded-full shadow-lg animate-float-slow">
-                <span className="text-2xl">💼</span>
-              </div>
-            </div>
-          </div>
+          {/* right :Visual Section */}
+                 <div className="flex-1 flex justify-center">
+                 <div className="w-full max-w-sm md:max-w-md">
+                   {/* Right Visual Section */}
+                   <div className="relative">
+                     {/* Central Circle */}
+                     <div className="relative w-full  mx-auto max-w-xs">
+                       <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+                       
+                       <div className="relative bg-white rounded-full p-8 shadow-2xl border-4 border-white transform hover:scale-105 transition-all duration-500">
+                         <div className="aspect-square flex flex-col items-center justify-center text-center space-y-4">
+                           
+                           <div className="flex justify-center">
+                             <img
+                               src="/logo.png"  // actual image path
+                               alt="Codedge Academy Logo"
+                               className="w-68 h-68 object-contain  hover:scale-105 transition-transform duration-300 .animate-float"
+                             />
+                           </div>
+                         </div>
+                       </div>
+         
+                       {/* Floating Badge 1 - Top Right */}
+                       <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-400 to-emerald-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float">
+                         <div className="flex items-center space-x-2">
+                           <span className="text-2xl">🎓</span>
+                           <span className="font-bold">Google</span>
+                         </div>
+                       </div>
+         
+                       {/* Floating Badge 2 - Top Left */}
+                       <div className="absolute -top-8 -left-8 bg-blue-400 text-white p-4 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-delay">
+                         
+                         <div className="flex items-center space-x-2">
+                           <BookOpen className="w-8 h-8" />
+                           <span className="font-bold">Microsoft</span>
+                         </div>
+                       </div>
+         
+                       {/* Floating Badge 3 - Bottom Right */}
+                       <div className="absolute -bottom-4 -right-15 bg-gradient-to-r from-purple-400 to-pink-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-slow">
+                         <div className="flex items-center space-x-2">
+                           <span className="text-2xl">✨</span>
+                           <span className="font-bold">IBM</span>
+                         </div>
+                       </div>
+         
+                       {/* Floating Card - Bottom /}
+                       <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl shadow-2xl p-6 w-80 hover:shadow-purple-200 transition-all duration-500 hover:-translate-y-2 border border-purple-100">
+                         <div className="text-center space-y-2">
+                           <h4 className="text-xl font-bold text-gray-900">AI & Data Science</h4>
+                           <p className="text-sm text-gray-600">Industry-aligned curriculum with IBM certifications</p>
+                         </div>
+         
+                       </div> */}
+                       <div className="absolute --bottom-2 -left-10 bg-gradient-to-r from-purple-400 to-pink-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-slow">
+                         <div className="flex items-center space-x-2">
+                           <span className="text-2xl">✨</span>
+                           <span className="font-bold">Xsav Lab</span>
+                         </div>
+                       </div>
+         
+                       {/* Small Floating Icons */}
+                       <div className="absolute top-1/4 -left-12 bg-orange-100 p-3 rounded-full shadow-lg animate-float">
+                         <span className="text-2xl">📱</span>
+                       </div>
+                       <div className="absolute bottom-1/3 -right-12 bg-pink-100 p-3 rounded-full shadow-lg animate-float-delay">
+                         <span className="text-2xl">🎨</span>
+                       </div>
+                       <div className="absolute top-1/2 -left-16 bg-purple-100 p-3 rounded-full shadow-lg animate-float-slow">
+                         <span className="text-2xl">💼</span>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 </div>
         </div>
 
         {/* Bottom Details Section */}
-        <div className="mt-32 grid md:grid-cols-3 gap-8">
+        <div className="mt-12 grid md:grid-cols-3 gap-8">
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-blue-100 hover:border-blue-300 transform hover:-translate-y-2">
             <div className="flex items-center space-x-4 mb-4">
               <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-3 rounded-xl">
