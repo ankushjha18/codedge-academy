@@ -69,8 +69,8 @@ export default function CareerSupport() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-orange-50 py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-orange-50 py-10 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="max-w-6xl mx-auto">
         {/* Floating Background Elements */}
         <div className="fixed inset-0 pointer-events-none overflow-hidden">
           <div className="absolute top-20 left-10 w-72 h-72 bg-orange-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-float"></div>
@@ -79,11 +79,11 @@ export default function CareerSupport() {
         </div>
 
         {/* Header Section */}
-        <div className="relative text-center mb-16 animate-fadeIn">
+        <div className="relative text-center mb-10 animate-fadeIn">
           <div className="absolute inset-0 flex items-center justify-center opacity-10">
             <Sparkles className="w-32 h-32 text-orange-500 animate-pulse" />
           </div>
-          <h1 className="relative text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-4 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-orange-900 to-slate-900 animate-gradient">
+          <h1 className="relative text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-3 tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-orange-900 to-slate-900 animate-gradient">
             Career Support
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-orange-500 to-amber-500 mx-auto rounded-full animate-expand"></div>
@@ -130,7 +130,7 @@ export default function CareerSupport() {
           </div>
 
           {/* Services Grid */}
-          <div className="grid sm:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-5">
             {services.map((service, index) => {
               const Icon = service.icon;
               const isHovered = hoveredCard === service.id;
@@ -196,7 +196,7 @@ export default function CareerSupport() {
                     
                     {/* Icon */}
                     <div className={`
-                      relative w-16 h-16 rounded-xl mb-4
+                      relative w-12 h-12 rounded-xl mb-3
                       bg-gradient-to-br ${service.color}
                       flex items-center justify-center
                       transform group-hover:scale-125 group-hover:rotate-12
@@ -215,7 +215,7 @@ export default function CareerSupport() {
 
                     {/* Content */}
                     <div className="relative">
-                      <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-orange-600 transition-colors duration-300 group-hover:tracking-wide">
+                      <h3 className="text-md font-bold text-slate-900 mb-2 group-hover:text-white-600 transition-colors duration-300 group-hover:tracking-wide">
                         {service.title}
                       </h3>
                       <p className="text-sm text-slate-600 leading-relaxed group-hover:text-slate-800 transition-colors duration-300">
@@ -230,7 +230,7 @@ export default function CareerSupport() {
                       group-hover:translate-x-0 group-hover:opacity-100
                       transition-all duration-500
                     `}>
-                      <ArrowRight className="w-5 h-5 text-orange-500 group-hover:animate-pulse" />
+                      <ArrowRight className="w-5 h-5 text-white-500 group-hover:animate-pulse" />
                     </div>
 
                     {/* Corner Accent */}

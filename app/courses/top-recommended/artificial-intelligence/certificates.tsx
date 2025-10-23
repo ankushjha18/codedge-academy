@@ -67,7 +67,7 @@ export default function CertificationSection() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-20 px-4 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-10 px-4 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-200/30 rounded-full blur-3xl"></div>
@@ -77,22 +77,22 @@ export default function CertificationSection() {
       <div className="absolute top-20 right-20 w-16 h-16 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-lg rotate-45 animate-float opacity-20"></div>
       <div className="absolute bottom-32 left-32 w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full animate-float-delayed opacity-20"></div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-3 mb-6 shadow-lg animate-slide-down">
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm border border-blue-200 rounded-full px-6 py-3 mb-4 shadow-lg animate-slide-down">
             <Award className="w-5 h-5 text-blue-600" />
             <span className="text-blue-700 text-sm font-semibold">Industry-Recognized Credentials</span>
             <Sparkles className="w-4 h-4 text-orange-500" />
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 animate-fade-in-up">
             <span className="bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
               Certification
             </span>
           </h1>
           
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8 animate-fade-in-up delay-200">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8 animate-fade-in-up delay-200">
             Get certified with globally recognized credentials that showcase your expertise
           </p>
 
@@ -185,7 +185,7 @@ export default function CertificationSection() {
           </div>
 
           {/* Right Side - Features */}
-          <div className="lg:w-1/2 space-y-6 w-full">
+          <div className="lg:w-1/2 space-y-3 w-full">
             {features.map((feature, idx) => (
               <div 
                 key={idx}

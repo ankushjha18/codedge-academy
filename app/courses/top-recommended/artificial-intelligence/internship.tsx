@@ -157,7 +157,7 @@ interface Project {
       </div>
 
 
-      <main className="relative z-10 max-w-7xl mx-auto px-6 py-12">
+      <main className="relative z-10 max-w-6xl mx-auto px-6 py-9">
         {/* Curriculum Section /}
         <section className="mb-20">
           <h2 className="text-4xl font-bold text-gray-800 mb-8">
@@ -239,11 +239,11 @@ interface Project {
 
         {/* Internship Section */}
         <section>
-          <div className="text-center mb-12">
-            <h2 className="text-5xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-9">
+            <h2 className="text-4xl font-bold text-gray-900 mb-3">
               The XSAV LAB Internship and Work Experience
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            <p className="text-md text-gray-600 max-w-3xl mx-auto">
               Under the masters in Ai 100% Job Guarantee Program, Each Student undertakes work and complete all assigned jobs in real time.These are real jobs that translate into meeting the companies objectives and key responsibilities.
             </p>
           </div>
@@ -282,7 +282,7 @@ interface Project {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300" />
                 
                 <div className="relative z-10 p-8 pb-6">
-                  <h3 className="text-2xl font-bold mb-4 text-white group-hover:scale-105 transition-transform">
+                  <h3 className="text-2xl font-bold mb-5 text-white group-hover:scale-105 transition-transform">
                     {project.title}
                   </h3>
                 </div>
@@ -292,8 +292,8 @@ interface Project {
                     {project.description}
                   </p>
                   
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center">
+                  <div className="flex items-center gap-5">
+                    <div className="w-13 h-13 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
                       </svg>

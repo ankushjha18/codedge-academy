@@ -68,7 +68,7 @@ export default function ToolsSection() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 py-20 px-4 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 py-12 px-4 relative overflow-hidden">
       {/* Animated background grid */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
       
@@ -99,16 +99,16 @@ export default function ToolsSection() {
         }}
       />
 
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full px-6 py-3 mb-6 animate-slide-down">
             <Code2 className="w-5 h-5 text-blue-400 animate-spin-slow" />
             <span className="text-blue-300 text-sm font-semibold tracking-wide">Master Industry Tools</span>
             <Sparkles className="w-4 h-4 text-purple-400 animate-pulse" />
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in-up">
+          <h1 className="text-4xl md:text-5xl font-bold mb-3 animate-fade-in-up">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-gradient">
               Programming Languages
             </span>
@@ -118,12 +118,12 @@ export default function ToolsSection() {
             </span>
           </h1>
           
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto animate-fade-in-up delay-200">
+          <p className="text-lg text-gray-400 max-w-3xl mx-auto animate-fade-in-up delay-200">
             Master the most in-demand technologies used by top companies worldwide
           </p>
 
           {/* Floating badges */}
-          <div className="flex justify-center gap-4 mt-8 flex-wrap">
+          <div className="flex justify-center gap-4 mt-5 flex-wrap">
             {['25+ Tools', 'Hands-on Projects', 'Industry Standard'].map((badge, idx) => (
               <div 
                 key={idx}
@@ -151,7 +151,7 @@ export default function ToolsSection() {
               <div className={`absolute inset-0 bg-gradient-to-r ${tool.color} rounded-2xl blur-xl opacity-0 group-hover:opacity-50 transition-all duration-500 scale-95 group-hover:scale-110`}></div>
               
               {/* Card */}
-              <div className="relative bg-slate-800/60 backdrop-blur-xl rounded-2xl border border-slate-700/50 p-6 h-full transition-all duration-500 group-hover:border-slate-600 group-hover:bg-slate-800/80 group-hover:transform group-hover:-translate-y-2 group-hover:shadow-2xl overflow-hidden">
+              <div className="relative bg-slate-800/60 backdrop-blur-xl rounded-2xl border border-slate-700/50 p-3 h-full transition-all duration-500 group-hover:border-slate-600 group-hover:bg-slate-800/80 group-hover:transform group-hover:-translate-y-2 group-hover:shadow-2xl overflow-hidden">
                 {/* Shine effect */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
@@ -168,13 +168,14 @@ export default function ToolsSection() {
                 </div>
 
                 {/* Logo */}
-                <div className="flex items-center justify-center mb-4 relative">
+                <div className="flex gap-2 items-center justify-center  h-full">
+                <div className="flex items-center justify-center mb-2 relative">
                   <div className={`absolute inset-0 bg-gradient-to-r ${tool.color} opacity-0 group-hover:opacity-20 blur-xl rounded-full transition-all duration-500`}></div>
                   <div className="relative transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-6">
                     <img 
                       src={tool.logo} 
                       alt={tool.name}
-                      className="w-16 h-16 object-contain filter drop-shadow-lg transition-all duration-500 group-hover:drop-shadow-2xl"
+                      className="w-8 h-8 object-contain filter drop-shadow-lg transition-all duration-500 group-hover:drop-shadow-2xl"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.src  = 'https://via.placeholder.com/64/4F46E5/FFFFFF?text=' + tool.name.charAt(0);
@@ -195,6 +196,7 @@ export default function ToolsSection() {
                 <h3 className="text-center text-white font-semibold text-lg mb-2 transition-all duration-300 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400">
                   {tool.name}
                 </h3>
+                </div>
 
                 {/* Progress bar animation on hover */}
                 <div className="h-1 bg-slate-700 rounded-full overflow-hidden opacity-0 group-hover:opacity-100 transition-all duration-300">
