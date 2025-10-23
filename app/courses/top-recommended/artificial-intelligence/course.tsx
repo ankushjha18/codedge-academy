@@ -87,7 +87,7 @@ export default function WebDevHero() {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 container mx-auto px-15 py-20 flex flex-col lg:flex-row items-center justify-between min-h-screen">
+      <div className="relative z-10 container mx-auto  px-17 py-15 flex flex-col lg:flex-row items-center justify-between min-h-screen">
         {/* Left content */}
         <div className="flex-1 space-y-8 mb-12 lg:mb-0">
           {/* Logo/Brand /}
