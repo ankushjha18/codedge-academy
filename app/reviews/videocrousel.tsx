@@ -132,7 +132,7 @@ const VideoTestimonialCarousel = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-black to-slate-900 py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <style jsx>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
@@ -241,8 +241,8 @@ const VideoTestimonialCarousel = () => {
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0 bg-grid opacity-20"></div>
-      <div className="absolute top-20 left-10 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl opacity-20 animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
+      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl opacity-20 animate-float"></div>
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-orange-500 rounded-full filter blur-3xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Header */}

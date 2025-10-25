@@ -11,7 +11,7 @@ const TopRatedVideoSection = () => {
       rating: '4.7',
       logo: '🔗',
       color: 'from-blue-50 to-blue-100',
-      textColor: 'text-blue-700',
+      textColor: 'text-blue-500',
       badge: 'Top Rated'
     },
     {
@@ -19,7 +19,7 @@ const TopRatedVideoSection = () => {
       rating: '4.7',
       logo: '📚',
       color: 'from-green-50 to-green-100',
-      textColor: 'text-green-700',
+      textColor: 'text-green-500',
       badge: 'Featured'
     },
     {
@@ -27,7 +27,7 @@ const TopRatedVideoSection = () => {
       rating: '4.7',
       logo: '🔄',
       color: 'from-rose-50 to-rose-100',
-      textColor: 'text-rose-700',
+      textColor: 'text-rose-500',
       badge: 'Top Choice'
     },
     {
@@ -35,7 +35,7 @@ const TopRatedVideoSection = () => {
       rating: '4.7',
       logo: '🔍',
       color: 'from-purple-50 to-purple-100',
-      textColor: 'text-purple-700',
+      textColor: 'text-purple-500',
       badge: 'Verified'
     }
   ];
@@ -49,7 +49,7 @@ const TopRatedVideoSection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 py-10 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 py-17 px-4 sm:px-6 lg:px-8">
       <style jsx>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }
@@ -191,10 +191,10 @@ const TopRatedVideoSection = () => {
               ))}
             </div>
 
-            {/* Stats */}
+            {/* Stats /}
             <div className="mt-8 grid grid-cols-3 gap-4">
               <div className="text-center">
-                <div className="text-3xl font-black text-indigo-600 mb-1">50K+</div>
+                <div className="text-3xl font-black text-orange-600 mb-1">50K+</div>
                 <div className="text-sm text-slate-600">Students</div>
               </div>
               <div className="text-center">
@@ -205,7 +205,7 @@ const TopRatedVideoSection = () => {
                 <div className="text-3xl font-black text-indigo-600 mb-1">100+</div>
                 <div className="text-sm text-slate-600">Courses</div>
               </div>
-            </div>
+            </div>*/}
           </div>
 
           {/* Right Side - Video Player */}
@@ -231,7 +231,7 @@ const TopRatedVideoSection = () => {
                       className="group relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white hover:bg-indigo-600 transition-all duration-300 flex items-center justify-center animate-pulse-glow hover:scale-110 active:scale-95"
                       aria-label="Play video"
                     >
-                      <Play className="w-10 h-10 sm:w-12 sm:h-12 text-indigo-600 group-hover:text-white ml-1" fill="currentColor" />
+                      <Play className="w-10 h-10 sm:w-12 sm:h-12 text-blue-100 group-hover:text-white ml-1" fill="currentColor" />
                       
                       {/* Pulse Rings */}
                       <div className="absolute inset-0 rounded-full border-4 border-white/30 animate-ping"></div>
@@ -257,14 +257,14 @@ const TopRatedVideoSection = () => {
                 </div>
               </div>
 
-              {/* Floating Elements */}
+              {/* Floating Elements /}
               <div className="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-2xl animate-float" style={{ animationDelay: '1s' }}>
                 <Star className="w-10 h-10 text-white fill-white" />
               </div>
               
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl shadow-2xl animate-float" style={{ animationDelay: '1.5s' }}>
                 4.7
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

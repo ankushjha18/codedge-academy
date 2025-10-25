@@ -61,7 +61,7 @@ const AboutUsSection = () => {
                   Codedge Academy
                 </span>{' '}
                 <span className="text-gray-800">is a full-service tech education platform focused on helping learners</span>{' '}
-                <span className="bg-gradient-to-r from-green-600 to-emerald-600 text-transparent bg-clip-text">
+                <span className="bg-gradient-to-r from-green-500 to-emerald-500 text-transparent bg-clip-text">
                   succeed online
                 </span>
                 <span className="text-gray-800">.</span>

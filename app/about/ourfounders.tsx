@@ -26,7 +26,7 @@ const FoundersSection = () => {
       experience: "Ex-Google, AT&T",
       years: "7+ Years of Experience",
       description: "With a career that spans roles at Google and AT&T, Kajal is an expert in user-centric AI products, data science, and scalable solutions. Her journey reflects a perfect blend of deep tech skills and product-thinking. A mentor by nature and a trailblazer in her field, she's on a mission to democratize world-class tech education. Kajal leads learner experience and product excellence at Codedge, infusing every program with the mindset and tools needed to crack top-tier roles.",
-      gradient: "from-purple-600 to-pink-600",
+      gradient: "from-blue-600 to-purple-500",
       bgGradient: "from-purple-50 to-pink-50",
       accentColor: "purple",
       highlights: ["User-Centric AI", "Data Science", "Learner Experience"],
@@ -187,7 +187,7 @@ const FoundersSection = () => {
         </div>
 
         {/* Bottom Stats Section */}
-        <div className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl p-7 shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
+        <div className="bg-gradient-to-r from-blue-600 via-blue-500 to-purple-500 rounded-3xl p-7 shadow-2xl transform hover:scale-[1.02] transition-all duration-500">
           <div className="grid md:grid-cols-3 gap-8 text-center text-white">
             <div className="space-y-1">
               <div className="flex items-center justify-center space-x-2 mb-3">
