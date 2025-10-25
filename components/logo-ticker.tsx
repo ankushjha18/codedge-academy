@@ -13,36 +13,42 @@ const TrustedBrandsSection = () => {
   const brandRows = [
     // Row 1 - Scrolling Right
     [
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/7/74/Myntra_logo.png', href: 'https://myntra.com', color: 'from-pink-500 to-red-500' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/4/49/World_Bank_Group_logo.svg', href: 'https://worldbank.org', color: 'from-blue-500 to-cyan-500' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/f/f4/The_University_of_Chicago_Logo.svg', href: 'https://uchicago.edu', color: 'from-red-600 to-orange-600' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg', href: 'https://tata.com', color: 'from-blue-600 to-indigo-600' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg', href: 'https://samsung.com', color: 'from-blue-700 to-purple-700' },
+      { img: '/placement_partners/atlassian.avif', href: 'https://www.atlassian.com/', color: 'from-pink-500 to-red-500' },
+      { img: '/placement_partners/boch.avif', href: 'https://www.bosch.in/', color: 'from-blue-500 to-cyan-500' },
+      { img: '/placement_partners/cisco.png', href: 'https://www.cisco.com/site/in/en/index.html', color: 'from-red-600 to-orange-600' },
+      { img: '/placement_partners/dell.png', href: 'https://www.dell.com/en-in', color: 'from-blue-600 to-indigo-600' },
+      { img: '/placement_partners/samsung.png', href: 'https://samsung.com', color: 'from-blue-700 to-purple-700' },
       { img: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg', href: 'https://google.com', color: 'from-red-500 to-yellow-500' },
       { img: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg', href: 'https://microsoft.com', color: 'from-blue-500 to-green-500' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg', href: 'https://apple.com', color: 'from-gray-700 to-gray-900' }
+      { img: '/placement_partners/delot.avif', href: 'https://www.deloitte.com/in/en.html', color: 'from-gray-700 to-gray-900' },
+      { img: '/placement_partners/samsung.png', href: 'https://samsung.com', color: 'from-gray-700 to-gray-900' },
+      { img: '/placement_partners/uber.png', href: 'https://www.uber.com/in/en/', color: 'from-gray-700 to-gray-900' }
     ],
     // Row 2 - Scrolling Left
     [
-      { img: 'https://upload.wikimedia.org/wikipedia/en/2/25/Bajaj_Auto_Logo.svg', href: 'https://bajajauto.com', color: 'from-blue-600 to-blue-800' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg', href: 'https://amazon.com', color: 'from-orange-400 to-yellow-600' },
+      { img: '/placement_partners/espn.png', href: 'https://www.espn.in/', color: 'from-blue-600 to-blue-800' },
+      { img: '/placement_partners/ey.png', href: 'https://www.ey.com/en_in', color: 'from-orange-400 to-yellow-600' },
       { img: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg', href: 'https://accenture.com', color: 'from-purple-600 to-pink-600' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg', href: 'https://walmart.com', color: 'from-blue-500 to-yellow-500' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg', href: 'https://visa.com', color: 'from-blue-600 to-blue-800' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/4/4b/Unilever_Logo.svg', href: 'https://unilever.com', color: 'from-blue-400 to-teal-500' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/8/87/PwC_Logo.svg', href: 'https://pwc.com', color: 'from-orange-500 to-red-600' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg', href: 'https://netflix.com', color: 'from-red-600 to-black' }
+      { img: '/placement_partners/flipkart.png', href: 'https://www.flipkart.com/', color: 'from-blue-500 to-yellow-500' },
+      { img: '/placement_partners/genpact.png', href: 'https://www.genpact.com/', color: 'from-blue-600 to-blue-800' },
+      { img: '/placement_partners/jpmorgan.avif', href: 'https://www.jpmorgan.com/global', color: 'from-blue-400 to-teal-500' },
+      { img: '/placement_partners/pwc.png', href: 'https://pwc.com', color: 'from-orange-500 to-red-600' },
+      { img: '/placement_partners/meta.avif', href: 'https://www.meta.com/en-gb/about/?srsltid=AfmBOopVM8-VzBcGARS5NSphJ96C1r-TkBtRV0P4skRTRv4xXXiCBxZZ', color: 'from-red-600 to-black' },
+      { img: '/placement_partners/stripe.avif', href: 'https://stripe.com/in', color: 'from-red-600 to-black' },
+      { img: '/placement_partners/walmart.png', href: 'https://corporate.walmart.com/about/international/markets/india', color: 'from-red-600 to-black' }
     ],
     // Row 3 - Scrolling Right
     [
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/7/78/ESPN_wordmark.svg', href: 'https://espn.com', color: 'from-red-600 to-red-800' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/0/00/Ericsson_logo.svg', href: 'https://ericsson.com', color: 'from-blue-600 to-purple-600' },
+      { img: '/placement_partners/meta1.avif', href: 'https://www.meta.com/en-gb/about/?srsltid=AfmBOopVM8-VzBcGARS5NSphJ96C1r-TkBtRV0P4skRTRv4xXXiCBxZZ', color: 'from-red-600 to-red-800' },
+      { img: '/placement_partners/ola.png', href: 'https://www.olacabs.com/', color: 'from-blue-600 to-purple-600' },
       { img: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/Lenovo_logo_2015.svg', href: 'https://lenovo.com', color: 'from-red-500 to-blue-600' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/9/9d/KPMG_logo.svg', href: 'https://kpmg.com', color: 'from-blue-600 to-navy-800' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Intel_logo_%282006-2020%29.svg', href: 'https://intel.com', color: 'from-blue-500 to-cyan-600' },
+      { img: '/placement_partners/kpmGG.avif', href: 'https://kpmg.com', color: 'from-blue-600 to-navy-800' },
+      { img: '/placement_partners/paypal.png', href: 'https://www.paypal.com/in/home', color: 'from-blue-500 to-cyan-600' },
       { img: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg', href: 'https://infosys.com', color: 'from-blue-500 to-indigo-600' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Adobe_Systems_logo_and_wordmark.svg', href: 'https://adobe.com', color: 'from-red-600 to-pink-600' },
-      { img: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg', href: 'https://oracle.com', color: 'from-red-500 to-orange-600' }
+      { img: '/placement_partners/pepsico.png', href: 'https://www.pepsico.com/', color: 'from-red-600 to-pink-600' },
+      { img: '/placement_partners/razorpay-icon.png', href: 'https://razorpay.com/', color: 'from-red-500 to-orange-600' },
+      { img: '/placement_partners/tcs.png', href: 'https://www.tcs.com/', color: 'from-red-500 to-orange-600' },
+      { img: '/placement_partners/zomato.avif', href: 'https://www.zomato.com/ncr', color: 'from-red-500 to-orange-600' }
     ]
   ];
 
