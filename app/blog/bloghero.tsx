@@ -126,25 +126,25 @@ export default function BlogHero() {
   };
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-950 via-purple-950 to-slate-900 overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-slate-950 via-black to-slate-900 overflow-hidden">
       {/* Canvas Background */}
       <canvas ref={canvasRef} className="absolute inset-0 z-0" />
 
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-pink-500/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-black-500/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-black-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 right-1/3 w-72 h-72 bg-black-500/20 rounded-full blur-3xl animate-pulse delay-2000"></div>
       </div>
 
       {/* Floating 3D-like Cards */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div 
-          className="absolute top-20 right-10 w-48 h-64 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl backdrop-blur-sm border border-white/10 transform rotate-12 animate-float-slow"
+          className="absolute top-20 right-10 w-48 h-64 bg-gradient-to-br from-blue-500/20 to-orange-500/20 rounded-2xl backdrop-blur-sm border border-white/10 transform rotate-12 animate-float-slow"
           style={{ transform: `translateY(${scrollY * 0.1}px) rotate(12deg)` }}
         >
           <div className="p-6">
-            <BookOpen className="w-8 h-8 text-purple-300 mb-3" />
+            <BookOpen className="w-8 h-8 text-blue-300 mb-3" />
             <div className="space-y-2">
               <div className="h-2 bg-white/20 rounded w-3/4"></div>
               <div className="h-2 bg-white/20 rounded w-full"></div>
@@ -154,7 +154,7 @@ export default function BlogHero() {
         </div>
 
         <div 
-          className="absolute bottom-32 left-10 w-40 h-56 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl backdrop-blur-sm border border-white/10 transform -rotate-6 animate-float-medium"
+          className="absolute bottom-32 left-10 w-40 h-56 bg-gradient-to-br from-blue-500/20 to-blue-500/20 rounded-2xl backdrop-blur-sm border border-white/10 transform -rotate-6 animate-float-medium"
           style={{ transform: `translateY(${scrollY * 0.15}px) rotate(-6deg)` }}
         >
           <div className="p-5">
@@ -167,18 +167,13 @@ export default function BlogHero() {
           </div>
         </div>
 
-        <div 
-          className="absolute top-1/3 left-1/4 w-32 h-32 bg-gradient-to-br from-pink-500/20 to-purple-500/20 rounded-full backdrop-blur-sm border border-white/10 flex items-center justify-center animate-float-fast"
-          style={{ transform: `translateY(${scrollY * 0.2}px)` }}
-        >
-          <Coffee className="w-12 h-12 text-pink-300" />
-        </div>
+        
       </div>
 
       {/* Geometric Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-        <div className="absolute top-1/4 left-1/3 w-24 h-24 border-2 border-purple-400 rotate-45 animate-spin-slow"></div>
-        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 border-2 border-pink-400 rounded-full animate-ping-slow"></div>
+        <div className="absolute top-1/4 left-1/3 w-24 h-24 border-2 border-blue-400 rotate-45 animate-spin-slow"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-32 h-32 border-2 border-orange-400 rounded-full animate-ping-slow"></div>
         <div className="absolute top-2/3 left-1/2 w-20 h-20 border-2 border-blue-400 rotate-45 animate-spin-reverse"></div>
       </div>
 
@@ -198,17 +193,17 @@ export default function BlogHero() {
 
           {/* Main Heading with Morphing Background */}
           <div className="relative mb-6">
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-pink-600/20 to-blue-600/20 blur-3xl animate-morph"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-orange-600/20 to-blue-600/20 blur-3xl animate-morph"></div>
             <h1 className="relative text-5xl sm:text-6xl lg:text-7xl font-bold text-center animate-slide-up">
-              <span className="bg-gradient-to-r from-white via-purple-200 to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-blue-200 to-white bg-clip-text text-transparent">
                 Discover Amazing
               </span>
               <br />
               <span className="relative inline-block mt-2">
-                <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
+                <span className="bg-gradient-to-r from-blue-400 via-orange-400 to-blue-400 bg-clip-text text-transparent animate-gradient">
                   {words[currentWord]}
                 </span>
-                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-full animate-expand"></div>
+                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-orange-500 to-blue-500 rounded-full animate-expand"></div>
               </span>
             </h1>
           </div>
@@ -224,7 +219,7 @@ export default function BlogHero() {
               onMouseMove={handleMouseMove}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50"
+              className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50"
             >
               <div
                 className="absolute inset-0 bg-white/20 rounded-full transition-all duration-300"
@@ -241,7 +236,7 @@ export default function BlogHero() {
             </button>
 
             <button className="group px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full font-semibold text-white hover:bg-white/20 transition-all duration-300 hover:scale-105 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/0 via-pink-600/30 to-purple-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-orange-600/30 to-blue-600/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
               <span className="relative flex items-center gap-2">
                 Latest Posts
                 <TrendingUp className="w-5 h-5 group-hover:rotate-12 transition-transform" />
@@ -253,12 +248,12 @@ export default function BlogHero() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 animate-fade-in-delay-3">
             {[
               { icon: Zap, title: 'Fast Updates', desc: 'Daily fresh content', color: 'from-yellow-500/20 to-orange-500/20' },
-              { icon: TrendingUp, title: 'Trending Topics', desc: 'What\'s hot right now', color: 'from-pink-500/20 to-rose-500/20' },
-              { icon: Sparkles, title: 'Quality Reads', desc: 'Curated for you', color: 'from-purple-500/20 to-blue-500/20' },
+              { icon: TrendingUp, title: 'Trending Topics', desc: 'What\'s hot right now', color: 'from-orange-500/20 to-rose-500/20' },
+              { icon: Sparkles, title: 'Quality Reads', desc: 'Curated for you', color: 'from-blue-500/20 to-blue-500/20' },
             ].map((item, i) => (
               <div
                 key={i}
-                className="group relative p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/20 overflow-hidden"
+                className="group relative p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 overflow-hidden"
               >
                 {/* Animated gradient background */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
@@ -267,8 +262,8 @@ export default function BlogHero() {
                 <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
                 
                 <div className="relative">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/30 to-pink-500/30 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
-                    <item.icon className="w-6 h-6 text-purple-300" />
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/30 to-orange-500/30 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+                    <item.icon className="w-6 h-6 text-blue-300" />
                   </div>
                   <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
                   <p className="text-gray-400 text-sm">{item.desc}</p>

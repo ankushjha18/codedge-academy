@@ -74,9 +74,9 @@ const TrustedBrandsSection = () => {
             </div>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
-            Trusted by world's best
-            <span className="block mt-2 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent animate-gradient-x">
+          <h2 className="text-3xl  md:text-4xl font-black text-gray-900 mb-4">
+            Trusted by world's best <br/>
+            <span className=" mt-2 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400  bg-clip-text text-transparent ">
               Organisations
             </span>
           </h2>

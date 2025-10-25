@@ -38,44 +38,45 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-gradient-to-br from-blue-900 via-blue-950 to-blue-900 overflow-hidden flex items-center justify-center">
+    <div className="relative min-h-screen bg-black overflow-hidden">
+    <div className="relative min-h-screen bg-gradient-to-br from-black-950 via-black to-blue-900/20 overflow-hidden flex items-center justify-center">
       {/* Circuit Board Pattern */}
       <svg className="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="circuit" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
             {/* Horizontal Lines */}
-            <line x1="0" y1="50" x2="80" y2="50" stroke="rgb(168, 85, 247)" strokeWidth="2" opacity="0.5">
+            <line x1="0" y1="50" x2="80" y2="50" stroke="rgb(0,0,255)" strokeWidth="2" opacity="0.5">
               <animate attributeName="x2" values="0;80;0" dur="4s" repeatCount="indefinite" />
             </line>
-            <line x1="120" y1="50" x2="200" y2="50" stroke="rgb(168, 85, 247)" strokeWidth="2" opacity="0.5" />
+            <line x1="120" y1="50" x2="200" y2="50" stroke="rgb(0,0,255)" strokeWidth="2" opacity="0.5" />
             
-            <line x1="50" y1="100" x2="150" y2="100" stroke="rgb(236, 72, 153)" strokeWidth="2" opacity="0.5">
+            <line x1="50" y1="100" x2="150" y2="100" stroke="rgb(0,0,255)" strokeWidth="2" opacity="0.5">
               <animate attributeName="x2" values="50;150;50" dur="3s" repeatCount="indefinite" />
             </line>
             
-            <line x1="0" y1="150" x2="100" y2="150" stroke="rgb(168, 85, 247)" strokeWidth="2" opacity="0.5" />
-            <line x1="120" y1="150" x2="200" y2="150" stroke="rgb(168, 85, 247)" strokeWidth="2" opacity="0.5">
+            <line x1="0" y1="150" x2="100" y2="150" stroke="rgb(0,0,255)" strokeWidth="2" opacity="0.5" />
+            <line x1="120" y1="150" x2="200" y2="150" stroke="rgb(0,0,255)" strokeWidth="2" opacity="0.5">
               <animate attributeName="x1" values="120;200;120" dur="5s" repeatCount="indefinite" />
             </line>
             
             {/* Vertical Lines */}
-            <line x1="80" y1="0" x2="80" y2="80" stroke="rgb(168, 85, 247)" strokeWidth="2" opacity="0.5" />
-            <line x1="80" y1="120" x2="80" y2="200" stroke="rgb(168, 85, 247)" strokeWidth="2" opacity="0.5">
+            <line x1="80" y1="0" x2="80" y2="80" stroke="rgb(0,0,255)" strokeWidth="2" opacity="0.5" />
+            <line x1="80" y1="120" x2="80" y2="200" stroke="rgb(0,0,255)" strokeWidth="2" opacity="0.5">
               <animate attributeName="y2" values="120;200;120" dur="4s" repeatCount="indefinite" />
             </line>
             
-            <line x1="150" y1="50" x2="150" y2="150" stroke="rgb(236, 72, 153)" strokeWidth="2" opacity="0.5">
+            <line x1="150" y1="50" x2="150" y2="150" stroke="rgb(0,0,255)" strokeWidth="2" opacity="0.5">
               <animate attributeName="y1" values="50;0;50" dur="3.5s" repeatCount="indefinite" />
             </line>
             
             {/* Circuit Nodes */}
-            <circle cx="80" cy="50" r="4" fill="rgb(168, 85, 247)">
+            <circle cx="80" cy="50" r="4" fill="rgb(0,0,255)">
               <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
             </circle>
-            <circle cx="150" cy="100" r="4" fill="rgb(236, 72, 153)">
+            <circle cx="150" cy="100" r="4" fill="rgb(0,0,255)">
               <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" />
             </circle>
-            <circle cx="80" cy="150" r="4" fill="rgb(168, 85, 247)">
+            <circle cx="80" cy="150" r="4" fill="rgb(0,0,255)">
               <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite" />
             </circle>
           </pattern>
@@ -88,7 +89,7 @@ export default function HeroSection() {
         {Array.from({ length: 15 }).map((_, i) => (
           <div
             key={i}
-            className="absolute text-purple-400 font-mono text-sm"
+            className="absolute text-blue-400 font-mono text-sm"
             style={{
               left: `${i * 7}%`,
               animation: `binaryFall ${8 + i * 0.5}s linear infinite`,
@@ -112,7 +113,7 @@ export default function HeroSection() {
               cx={`${node.x}%`}
               cy={`${node.y}%`}
               r="3"
-              fill="rgb(168, 85, 247)"
+              fill="rgb(0,0,255)"
               opacity="0.6"
             >
               <animate
@@ -136,7 +137,7 @@ export default function HeroSection() {
                 y1={`${node.y}%`}
                 x2={`${nodes[i + 1].x}%`}
                 y2={`${nodes[i + 1].y}%`}
-                stroke="rgb(168, 85, 247)"
+                stroke="rgb(0,0,255)"
                 strokeWidth="1"
                 opacity="0.2"
               >
@@ -157,7 +158,7 @@ export default function HeroSection() {
         {['<', '>', '{', '}', '/', '</>'].map((symbol, i) => (
           <div
             key={i}
-            className="absolute text-6xl font-bold text-purple-500"
+            className="absolute text-6xl font-bold text-blue-500"
             style={{
               left: `${10 + i * 15}%`,
               top: `${20 + (i % 3) * 25}%`,
@@ -171,8 +172,8 @@ export default function HeroSection() {
       </div>
 
       {/* Gradient Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
       
       {/* Cursor Glow Effect */}
       <div 
@@ -189,18 +190,18 @@ export default function HeroSection() {
           {/* Left: Main Content */}
        <div className="flex-1 text-left">
         {/* Floating Badge */}
-        <div className="inline-flex items-left gap-2 px-4 py-2 mb-8 bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 rounded-full text-purple-300 text-sm hover:bg-purple-500/20 transition-all duration-300 cursor-pointer group">
+        <div className="inline-flex items-left gap-2 px-4 py-2 mb-8 bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 rounded-full text-blue-300 text-sm hover:bg-blue-500/20 transition-all duration-300 cursor-pointer group">
           <Sparkles className="w-2 h-2 group-hover:rotate-12 transition-transform duration-300" />
           <span>Digital Innovation Studio</span>
         </div>
 
         {/* Main Heading with Gradient */}
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-          <span className="inline-block bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-gradient bg-300">
+          <span className="inline-block bg-gradient-to-r from-blue-400 via-orange-400 to-blue-400 bg-clip-text text-transparent animate-gradient bg-300">
             Transform Your
           </span>
           <br />
-          <span className="inline-block text-white hover:text-purple-300 transition-colors duration-500">
+          <span className="inline-block text-white hover:text-blue-300 transition-colors duration-500">
             Digital Presence
           </span>
         </h1>
@@ -214,24 +215,24 @@ export default function HeroSection() {
         <div className="flex flex-col sm:flex-row gap-6 justify-start items-center">
           {/* Start Project Button */}
           
-          <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold text-white text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50">
+          <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-semibold text-white text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50">
             <span className="relative z-10 flex items-center gap-2">
               Start Project
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
          
           {/* Contact Us Button */}
           <PopupForm
             trigger={
            <button 
-          className="group relative px-8 py-4 bg-transparent border-2 border-purple-500 rounded-full font-semibold text-white text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-pink-500">
+          className="group relative px-8 py-4 bg-transparent border-2 border-blue-500 rounded-full font-semibold text-white text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:border-orange-500">
             <span className="relative z-10 flex items-center gap-2">
               <Mail className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
               Contact Us
             </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-orange-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </button>
             }/>
           
@@ -245,7 +246,7 @@ export default function HeroSection() {
           <div className="relative">
             {/* Central Circle */}
             <div className="relative w-full  mx-auto max-w-xs">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-blue-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
               
               <div className="relative bg-white rounded-full p-8 shadow-2xl border-4 border-white transform hover:scale-105 transition-all duration-500">
                 <div className="aspect-square flex flex-col items-center justify-center text-center space-y-4">
@@ -278,7 +279,7 @@ export default function HeroSection() {
               </div>
 
               {/* Floating Badge 3 - Bottom Right */}
-              <div className="absolute -bottom-4 -right-15 bg-gradient-to-r from-purple-400 to-pink-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-slow">
+              <div className="absolute -bottom-4 -right-15 bg-gradient-to-r from-blue-400 to-orange-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-slow">
                 <div className="flex items-center space-x-2">
                   <span className="text-2xl">✨</span>
                   <span className="font-bold">IBM</span>
@@ -286,14 +287,14 @@ export default function HeroSection() {
               </div>
 
               {/* Floating Card - Bottom /}
-              <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl shadow-2xl p-6 w-80 hover:shadow-purple-200 transition-all duration-500 hover:-translate-y-2 border border-purple-100">
+              <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-white rounded-2xl shadow-2xl p-6 w-80 hover:shadow-blue-200 transition-all duration-500 hover:-translate-y-2 border border-blue-100">
                 <div className="text-center space-y-2">
                   <h4 className="text-xl font-bold text-gray-900">AI & Data Science</h4>
                   <p className="text-sm text-gray-600">Industry-aligned curriculum with IBM certifications</p>
                 </div>
 
               </div> */}
-              <div className="absolute --bottom-2 -left-10 bg-gradient-to-r from-purple-400 to-pink-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-slow">
+              <div className="absolute --bottom-2 -left-10 bg-gradient-to-r from-blue-400 to-orange-400 text-white px-6 py-3 rounded-full shadow-xl transform hover:scale-110 transition-all duration-300 animate-float-slow">
                 <div className="flex items-center space-x-2">
                   <span className="text-2xl">✨</span>
                   <span className="font-bold">Xsav Lab</span>
@@ -304,10 +305,10 @@ export default function HeroSection() {
               <div className="absolute top-1/4 -left-12 bg-orange-100 p-3 rounded-full shadow-lg animate-float">
                 <span className="text-2xl">📱</span>
               </div>
-              <div className="absolute bottom-1/3 -right-12 bg-pink-100 p-3 rounded-full shadow-lg animate-float-delay">
+              <div className="absolute bottom-1/3 -right-12 bg-orange-100 p-3 rounded-full shadow-lg animate-float-delay">
                 <span className="text-2xl">🎨</span>
               </div>
-              <div className="absolute top-1/2 -left-16 bg-purple-100 p-3 rounded-full shadow-lg animate-float-slow">
+              <div className="absolute top-1/2 -left-16 bg-blue-100 p-3 rounded-full shadow-lg animate-float-slow">
                 <span className="text-2xl">💼</span>
               </div>
             </div>
@@ -329,10 +330,10 @@ export default function HeroSection() {
               key={idx}
               className="group cursor-pointer"
             >
-              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">
                 {stat.num}
               </div>
-              <div className="text-gray-400 mt-2 group-hover:text-purple-300 transition-colors duration-300">
+              <div className="text-gray-400 mt-2 group-hover:text-blue-300 transition-colors duration-300">
                 {stat.label}
               </div>
             </div>
@@ -406,6 +407,7 @@ export default function HeroSection() {
           animation-delay: 2s;
         }
       `}</style>
+    </div>
     </div>
   );
 }

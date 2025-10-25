@@ -98,7 +98,7 @@ const LearningPathway = () => {
             <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
               Learning
             </span>
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x">
+            <span className="bg-gradient-to-r from-[#fc6f08] to-[#003b7b]  bg-clip-text text-transparent animate-gradient-x">
               Pathway
             </span>
           </h2>

@@ -70,13 +70,13 @@ const ContactSection = () => {
           {/* Left Side - Contact Form */}
           <div className="relative">
             {/* Decorative elements */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl opacity-10 blur-xl"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-br from-blue-500 to-black rounded-2xl opacity-10 blur-xl"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gradient-to-br from-orange-500 to-pink-600 rounded-2xl opacity-10 blur-xl"></div>
 
             {/* Form Card */}
             <div className="relative bg-white/80 backdrop-blur-xl rounded-3xl shadow-2xl p-8 border border-gray-100 transform transition-all duration-500 hover:shadow-blue-200/50 group">
               {/* Gradient border effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10"></div>
+              <div className="absolute inset-0  rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl -z-10"></div>
 
               <div className="space-y-6">
                 {/* Name Input */}

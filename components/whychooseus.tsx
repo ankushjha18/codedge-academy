@@ -368,7 +368,7 @@ export default function WhyChooseUs() {
           }}
         >
           <button 
-            className="group relative px-10 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-semibold rounded-full shadow-xl overflow-hidden"
+            className="group relative px-10 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-full shadow-xl overflow-hidden"
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'scale(1.05)';
               e.currentTarget.style.boxShadow = '0 20px 60px -10px rgba(139, 92, 246, 0.5)';
@@ -382,7 +382,7 @@ export default function WhyChooseUs() {
             }}
           >
             <span className="relative z-10">Start Your Journey Today</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </button>
         </div>
       </div>

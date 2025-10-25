@@ -36,7 +36,7 @@ export default function AboutHeroSection() {
   return (
     <div
       ref={heroRef}
-      className="relative min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-blue-950 overflow-hidden flex items-center"
+      className="relative min-h-screen bg-gradient-to-br from-black via-black-800 to-black overflow-hidden flex items-center"
       style={{
         scrollBehavior: 'smooth'
       }}
@@ -47,7 +47,7 @@ export default function AboutHeroSection() {
         <div
           className="absolute w-96 h-96 bg-blue-500/30 rounded-full blur-3xl transition-transform duration-300 ease-out"
           style={{
-            top: '10%',
+            top: '20%',
             left: '10%',
             transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px) translateY(${scrollY * 0.3}px)`
           }}

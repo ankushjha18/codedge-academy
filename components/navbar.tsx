@@ -304,10 +304,10 @@ const Navbar = () => {
             <PopupForm
             trigger={
             <div className="hidden md:block relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 rounded-full blur-2xl opacity-0 group-hover:opacity-70 transition-opacity duration-500 animate-pulse-glow"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 -full blur-2xl opacity-0 group-hover:opacity-70 transition-opacity duration-500 animate-pulse-glow"></div>
               <a
                 href="/#"
-                className={`relative block px-8 py-3 bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 text-white font-bold rounded-full overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-110 hover:shadow-orange-500/50 bg-size-200 animate-gradient-x ${
+                className={`relative block px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold rounded-full overflow-hidden shadow-2xl transform transition-all duration-500 hover:scale-110 hover:shadow-orange-500 bg-size-200 animate-gradient-x ${
                   isActive('/#') ? 'ring-4 ring-orange-300' : ''
                 }`}
               >

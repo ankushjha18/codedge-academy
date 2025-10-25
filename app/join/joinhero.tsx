@@ -52,7 +52,7 @@ const HeroSection = () => {
       }}
     >
       <div className="relative">
-        <div className={`absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl blur-xl opacity-50 animate-pulse`} />
+        <div className={`absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-500 rounded-2xl blur-xl opacity-50 animate-pulse`} />
         <div className={`relative ${size} bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl flex items-center justify-center shadow-2xl`}>
           <Icon className="text-white" size={size === 'w-16 h-16' ? 32 : 24} />
         </div>
@@ -67,7 +67,7 @@ const HeroSection = () => {
 
   const ParticleCircle = ({ delay, size, position }:ParticleCircleProps) => (
     <div
-      className={`absolute ${position} ${size} rounded-full bg-gradient-to-r from-orange-400 to-pink-500 opacity-20 animate-pulse`}
+      className={`absolute ${position} ${size} rounded-full bg-gradient-to-r from-orange-400 to-orange-500 opacity-20 animate-pulse`}
       style={{
         animationDelay: `${delay}s`,
         animationDuration: '3s'
@@ -83,14 +83,14 @@ const HeroSection = () => {
   ];
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-slate-900 via-black to-slate-900">
       {/* Animated Background Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_at_center,black_50%,transparent_100%)]" />
       
       {/* Animated Gradient Orbs */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" />
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" />
-      <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
+      <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-orange-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000" />
 
       {/* Floating Particles */}
       <ParticleCircle delay={0} size="w-2 h-2" position="top-20 left-10" />
@@ -129,7 +129,7 @@ const HeroSection = () => {
               }}
             >
               <span className="block text-white mb-2">Transform Your</span>
-              <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient">
+              <span className="block bg-gradient-to-r from-blue-400 via-blue-400 to-orange-400 bg-clip-text text-transparent animate-gradient">
                 Future with Us
               </span>
             </h1>
@@ -149,12 +149,12 @@ const HeroSection = () => {
                 isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
               }`}
             >
-              <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full font-semibold text-white shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 overflow-hidden">
+              <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-600 rounded-full font-semibold text-white shadow-2xl hover:shadow-blue-500/50 transition-all duration-300 hover:scale-105 overflow-hidden">
                 <span className="relative z-10 flex items-center gap-2">
                   Join Now
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-orange-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
 
               <button className="group px-8 py-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-full font-semibold text-white hover:bg-white/20 transition-all duration-300 hover:scale-105">
@@ -178,7 +178,7 @@ const HeroSection = () => {
                     key={index}
                     className="group relative p-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-blue-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="relative">
                       <Icon className="w-6 h-6 text-blue-400 mb-2 mx-auto" />
                       <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
@@ -199,7 +199,7 @@ const HeroSection = () => {
             {/* Main Video/Image Container */}
             <div className="relative group">
               {/* Glowing Background Effect */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 via-blue-600 to-orange-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 animate-pulse" />
               
               {/* Video/Image Frame */}
               <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl p-3 shadow-2xl overflow-hidden">
@@ -283,7 +283,7 @@ const HeroSection = () => {
                     key={index}
                     className="group relative p-4 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:scale-105"
                   >
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-blue-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="relative flex items-center gap-3">
                       <Icon className="w-8 h-8 text-blue-400" />
                       <div>

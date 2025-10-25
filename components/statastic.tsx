@@ -209,7 +209,7 @@ export default function StatsSection() {
       
       <section 
         ref={sectionRef}
-        className="relative py-24 px-4 md:px-6 overflow-hidden bg-gradient-to-b bg-gradient-to-b from-[#f0f8ff] via-[#e9f3ff] to-[#dfefff]"
+        className="relative py-24 px-4 md:px-6 overflow-hidden bg-gradient-to-b  from-[#f0f8ff] via-[#e9f3ff] to-[#dfefff]"
       >
         {/* Animated gradient orbs */}
         <div 
@@ -247,7 +247,7 @@ export default function StatsSection() {
         <div className="relative max-w-7xl mx-auto">
           {/* Section header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-orange-300 mb-4">
+            <h2 className="text-3xl md:text-5xl font-bold text-black-300 mb-4">
               Our Impact in{" "}
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
                 Numbers

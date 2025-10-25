@@ -208,7 +208,7 @@ export default function WhyLearnersLove() {
               </div>
             </div>
             
-            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
               What Our Program Offers
             </h2>
             
