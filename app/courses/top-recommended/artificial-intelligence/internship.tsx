@@ -59,19 +59,19 @@ export default function InternshipPage() {
       {
         title: 'Analysis for Zomato using Mutual Information Classification',
         description: 'Transforming material & chemical modeling via ML algorithms for Uttra Tech Predicting and optimizing physical chemical & mechanical properties fuelling Innovation in product development',
-        color: 'from-rose-500 to-pink-600',
+        color: 'from-purple-500 to-violet-600',
         company: 'pepsico'
       },
       {
         title: 'Empowering Early Stage Cancer Detection',
         description: 'Transforming material & chemical modeling via ML algorithms for UltraTech. predicting and optimizing physical chemical & mechanical properties fueling Innovation In product development.',
-        color: 'from-blue-500 to-indigo-600',
+        color: 'from-teal-500 to-cyan-600',
         company: 'pepsico'
       },
       {
         title: 'Global Financial Asset Market Sentiment Detection',
         description: 'Transforming material & chemical modeling via ML algorithms for Ultratech Predicting and optimizing physical chemical & mechanical properties fueling innovation in product development',
-        color: 'from-orange-500 to-amber-600',
+        color: 'from-indigo-500 to-blue-600',
         company: 'pepsico'
       }
     ],
@@ -99,19 +99,19 @@ export default function InternshipPage() {
       {
         title: 'Sentiment Analysis Dashboard',
         description: 'Create interactive dashboards for real-time sentiment analysis of social media data.',
-        color: 'from-emerald-500 to-green-600',
+        color: 'from-purple-500 to-violet-600',
         company: 'pepsico'
       },
       {
         title: 'Predictive Maintenance System',
         description: 'Build ML models to predict equipment failures and optimize maintenance schedules.',
-        color: 'from-fuchsia-500 to-pink-600',
+        color: 'from-teal-500 to-cyan-600',
         company: 'pepsico'
       },
       {
         title: 'Customer Churn Prediction',
         description: 'Analyze customer behavior patterns to predict and prevent customer churn.',
-        color: 'from-amber-500 to-orange-600',
+        color: 'from-indigo-500 to-blue-600',
         company: 'pepsico'
       }
     ]
@@ -260,7 +260,7 @@ interface Project {
                 onClick={() => setActiveTab(tab.id as ProjectTab)}
                 className={`px-8 py-4 rounded-full font-semibold transition-all ${
                   activeTab === tab.id
-                    ? 'bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-lg scale-105'
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg scale-105'
                     : 'bg-white/80 text-gray-700 hover:bg-white hover:shadow-md'
                 }`}
               >

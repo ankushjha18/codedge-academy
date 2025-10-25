@@ -102,7 +102,7 @@ export default function CertificationSection() {
               onClick={() => setActiveTab('ai')}
               className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
                 activeTab === 'ai'
-                  ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg scale-105'
                   : 'text-gray-600 hover:text-gray-800'
               }`}
             >
@@ -112,7 +112,7 @@ export default function CertificationSection() {
               onClick={() => setActiveTab('internship')}
               className={`px-8 py-3 rounded-xl font-semibold transition-all duration-300 ${
                 activeTab === 'internship'
-                  ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-lg scale-105'
                   : 'text-gray-600 hover:text-gray-800'
               }`}
             >

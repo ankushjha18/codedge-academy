@@ -149,7 +149,7 @@ export default function WebDevHero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-4">
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full font-semibold text-white overflow-hidden hover:scale-105 transition-transform duration-300">
+            <button className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-semibold text-white overflow-hidden hover:scale-105 transition-transform duration-300">
               <span className="relative z-10 flex items-center gap-2">
                 Enroll Now
                 <Rocket className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
